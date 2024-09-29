@@ -20,3 +20,7 @@ html {
 ::-webkit-scrollbar {
     width: 0px;
 }
+
+li {
+    list-style: none;
+}
