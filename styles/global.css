@@ -3,7 +3,8 @@
 /* font-family: "Dancing Script", cursive; */
 
 * {
-    transition: all 0.5s ease-out;
+    transition: all 0.1s ease-out;
+    /* outline: 1px solid red; */
 }
 
 body {
