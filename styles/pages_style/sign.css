@@ -2,15 +2,17 @@ body{
     background-image: url(../../assets/img/for_sign-in/Overlay.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size:contain;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-div{
     background-color: white;
     border: 1px solid black;
-    position: fixed;
-    top: 0;
-    margin-top: 75px;
+    margin-top: 5%;
+    height: 90%;
 }
 .sign-in{
     margin-left: 10%;
@@ -29,5 +31,63 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 19.2px;
-    width: 85%;
+    padding-bottom: 20px;
+}
+label{
+    font-family: Roboto;
+    font-weight: 500;
+    size: 16px;
+    line-height: 19,2px;
+    padding-top: 10px;
+}
+input{
+    width: 100%;
+    height: 40px;
+}
+#btn{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 16px 24px 14px 24px;
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-weight: 500;
+    size: 16px;
+    line-height: 19,2px;
+}
+#forgetPass{
+    font-family: Roboto;
+    font-weight: 500;
+    size: 16px;
+    line-height: 19,2px;
+    opacity: 50%;
+    float: left;
+    padding-right: 20px;
+}
+#resPass{
+    font-family: Roboto;
+    font-weight: 500;
+    size: 16px;
+    line-height: 19,2px;
+}
+footer{
+    text-align: center;
+    margin-top: 20%;
+    font-family: Roboto;
+    font-weight: 500;
+    size: 14px;
+    line-height: 16,8px;
+}
+.foot{
+    display: inline-block;
+    margin-left: 10px;
+    padding-bottom: 25px;
+    text-decoration: underline;
+}
+#bordfoot{
+    border-left: 1px;
+    border-left-color: black;
+    border-left-style: solid;
+    padding-left: 10px;
+    height: 15px;
 }
