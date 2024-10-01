@@ -10,3 +10,21 @@
 .border_white {
     border-color: white !important;
 }
+
+/* Images Zoom Transition */
+.img-container {
+    display: inline-block;
+    overflow: hidden;
+    height: 360px;
+    border: 1px solid black
+}
+
+.img-container img {
+    width: 359px;
+    object-fit: fill;
+    transition: transform 0.5s ease;
+}
+
+.img-container img:hover {
+    transform: scale(1.2);
+}
