@@ -10,3 +10,15 @@ header>span>ul {
 header>span>ul>li {
     border-right: 1px solid #121212;
 }
+
+.bg_img {
+    background-image: url(../../assets/img/for_home/ServiceSection.webp);
+    height: 720px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.border_white {
+    border-color: white !important;
+}
