@@ -45,3 +45,18 @@ header>span>ul>li {
 .font_dance {
     font-family: "Dancing Script", cursive;
 }
+
+.img-hover {
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid black
+}
+
+.img-hover img {
+    object-fit: fill;
+    transition: transform 0.5s ease;
+}
+
+.img-hover img:hover {
+    transform: scale(1.1);
+}
