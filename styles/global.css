@@ -25,10 +25,23 @@ li {
     list-style: none;
 }
 
-.font_dance {
-    font-family: "Dancing Script", cursive;
-}
-
 input {
     border-color: #D2D2D7 !important;
+}
+
+/* Main Header Global Style */
+header {
+    border: 1px solid #121212;
+}
+
+header>span>ul {
+    border-left: 1px solid #121212;
+}
+
+header>span>ul>li {
+    border-right: 1px solid #121212;
+}
+
+.font_dance {
+    font-family: "Dancing Script", cursive;
 }
