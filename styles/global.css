@@ -28,3 +28,7 @@ li {
 .font_dance {
     font-family: "Dancing Script", cursive;
 }
+
+input {
+    border-color: #D2D2D7 !important;
+}
