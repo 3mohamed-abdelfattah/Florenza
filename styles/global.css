@@ -46,6 +46,7 @@ header>span>ul>li {
     font-family: "Dancing Script", cursive;
 }
 
+/* Images Transitions */
 .img-hover {
     display: inline-block;
     overflow: hidden;
@@ -58,4 +59,38 @@ header>span>ul>li {
 
 .img-hover img:hover {
     transform: scale(1.05);
+}
+
+/* Text Animations */
+.container_text {
+    overflow: hidden;
+    position: relative;
+}
+
+.text {
+    transform: translateY(100%) rotate(45deg) scale(0.9);
+    opacity: 0;
+    transform-origin: left;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease, text-shadow 0.5s ease;
+    text-shadow: none;
+}
+
+@keyframes text-appear {
+    from {
+        transform: translateY(100%) rotate(25deg) scale(0.9);
+        opacity: 0;
+        text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    to {
+        transform: translateY(0) rotate(0) scale(1);
+        opacity: 1;
+        text-shadow: none;
+    }
+}
+
+/* Animation on page load */
+.container_text .text {
+    animation: text-appear 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.3s;
 }
