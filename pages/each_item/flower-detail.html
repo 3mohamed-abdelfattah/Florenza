@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Detail</title>
+</head>
+
+<body>
+    <div id="flower-detail"></div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const flowerId = params.get('id');
+
+        fetch('../../data/itemData.json')
+            .then(response => response.json())
+            .then(data => {
+                const flower = data.categories.find(category => category.category === 'Fresh Flowers')
+                    .items.find(item => item.id == flowerId);
+
+                if (flower) {
+                    const detailDiv = document.getElementById('flower-detail');
+                    detailDiv.innerHTML = `
+                        <h1>${flower.title}</h1>
+                        <img src="../../assets/img/our_items/fresh_flower/${flower.image}" alt="${flower.title}">
+                        <p>Price: $${flower.price}</p>
+                        <p>Description: ${flower.description}</p> 
+                    `;
+                } else {
+                    document.getElementById('flower-detail').innerHTML = `<p>Flower not found.</p>`;
+                }
+            });
+    </script>
+</body>
+
+</html>
