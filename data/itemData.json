@@ -4,53 +4,74 @@
             "category": "Fresh Flowers",
             "items": [
                 {
-                    "title": "Classic Red Roses",
+                    "title": "Elegant Blue and White Bouquet",
                     "price": 29.99,
-                    "description": "A beautiful bouquet of classic red roses, perfect for any romantic occasion.",
+                    "description": "A graceful mix of white roses and blue blooms, perfect for any occasion.",
                     "vase": true,
-                    "image": "/images/roses/classic_red_roses.jpg"
+                    "image": "item1.webp"
                 },
                 {
-                    "title": "Pink Passion Roses",
+                    "title": "Vibrant Mixed Roses",
                     "price": 24.99,
-                    "description": "Soft pink roses that bring a touch of elegance to any room.",
+                    "description": "A colorful arrangement of mixed roses, ideal for brightening up any event.",
                     "vase": false,
-                    "image": "/images/roses/pink_passion_roses.jpg"
+                    "image": "item2.webp"
                 },
                 {
-                    "title": "Sunshine Yellow Roses",
+                    "title": "Soft Pastel Floral Arrangement",
                     "price": 27.99,
-                    "description": "Bright yellow roses that are perfect for a cheerful gift.",
+                    "description": "A soft blend of pastel flowers, perfect for a gentle, elegant touch.",
                     "vase": true,
-                    "image": "/images/roses/sunshine_yellow_roses.jpg"
+                    "image": "item3.webp"
                 },
                 {
-                    "title": "White Serenity Roses",
+                    "title": "Delicate Pink and Yellow Bouquet",
                     "price": 26.50,
-                    "description": "Elegant white roses that symbolize purity and grace.",
+                    "description": "A charming mix of pink and yellow flowers, perfect for a soft, cheerful gesture.",
                     "vase": false,
-                    "image": "/images/roses/white_serenity_roses.jpg"
+                    "image": "item4.webp"
                 },
                 {
-                    "title": "Lavender Dream Roses",
+                    "title": "Romantic Pink and Dark Red Bouquet",
                     "price": 30.99,
-                    "description": "A stunning bouquet of lavender roses, ideal for a unique touch.",
+                    "description": "A striking blend of pink and dark red flowers, perfect for a passionate gesture.",
                     "vase": true,
-                    "image": "/images/roses/lavender_dream_roses.jpg"
+                    "image": "item5.webp"
                 },
                 {
-                    "title": "Rainbow Mixed Roses",
+                    "title": "Classic Off-White Bouquet",
                     "price": 32.00,
-                    "description": "A vibrant mix of multicolored roses for a lively arrangement.",
+                    "description": "A timeless arrangement of off-white blooms, perfect for any elegant occasion.",
                     "vase": true,
-                    "image": "/images/roses/rainbow_mixed_roses.jpg"
+                    "image": "item6.jpeg"
                 },
                 {
-                    "title": "Peach Delight Roses",
+                    "title": "Elegant Peach Bouquet",
                     "price": 28.75,
-                    "description": "Charming peach roses that make a sweet and soft statement.",
+                    "description": "A soft arrangement of peach-colored flowers, perfect for a warm and elegant touch.",
                     "vase": false,
-                    "image": "/images/roses/peach_delight_roses.jpg"
+                    "image": "item7.webp"
+                },
+                {
+                    "title": "Simple Pink Bouquet",
+                    "price": 27.75,
+                    "description": "A delicate collection of pink flowers, perfect for a sweet and simple gesture.",
+                    "vase": false,
+                    "image": "item8.webp"
+                },
+                {
+                    "title": "Vibrant Mixed Color Bouquet",
+                    "price": 26.75,
+                    "description": "A lively assortment of colorful blooms, perfect for brightening any occasion.",
+                    "vase": false,
+                    "image": "item9.webp"
+                },
+                {
+                    "title": "Warm Mixed Orange Bouquet",
+                    "price": 24.75,
+                    "description": "A vibrant mix of orange blooms, perfect for adding warmth to any setting.",
+                    "vase": false,
+                    "image": "item10.webp"
                 }
             ]
         },
