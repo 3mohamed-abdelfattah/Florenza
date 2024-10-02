@@ -11,7 +11,7 @@
     background-color: #F5F5F7;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 80px;
     text-align: left;
     position: sticky;
@@ -116,6 +116,13 @@ h3{
     margin-top: 12px;
     float: left;
     margin-left: 12px;
+}
+.order-sum{
+    font-family: Roboto;
+    font-weight: 500;
+    size: 14px;
+    line-height: 16.8px;
+    padding-bottom: 40px;
 }
 .flower-img{
     width: 160px;
