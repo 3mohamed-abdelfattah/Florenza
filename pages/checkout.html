@@ -25,15 +25,17 @@
             </ul>
         </span>
     </header>
+    <!-- main-div -->
     <div class="main-div">
+        <!-- left-div -->
     <div class="left-div">
         <div class="steps">
-            <span class="default-font">INFORMATION  ></span>
-            <span class="hide">SHIPPING ></span>
-            <span class="hide">PAYMENT ></span>
+            <span class="default-font">INFORMATION  <img class="img-arw" src="../assets/img/icons/right arrow.svg" alt="arrow-right"></span>
+            <span class="hide">SHIPPING <img class="img-arw" src="../assets/img/icons/right arrow.svg" alt="arrow-right"></span>
         </div>
         <div class="clr-div"></div>
         <div id="hav-acc">Already have an account?<a id="a-login" href="">Log in</a> for faster checkout</div>
+        <!-- form -->
         <form action="" method="post">
             <h3 class="default-font">1 Contact information</h3>
             <input class="inp" type="text" placeholder="Your Name">
@@ -47,11 +49,49 @@
             <input class="half-inp2" type="text" placeholder="Apartment Number">
             <input class="chkbox" type="checkbox" name="" id="">
             <span class="add-chk">I don't know the address, please call the recipient.</span>
-            <button type="submit" class="btn">Continue to shipping</button>
+            <button type="submit" class="btn">Place Order</button>
         </form>
     </div>
     <!-- right-div -->
-    <div class="right-div"></div>
+    <div class="right-div">
+        <span class="default-font">Order summary</span>
+        <div class="img-w-details">
+            <img class="flower-img" src="../assets/img/our_items/fresh_flower/item6.jpeg" alt="flower6">
+            <div class="img-details">
+            <span class="descrip-img-onleft">
+                <span class="des-left-top">Snowfall</span>
+                <div class="clr-div"></div>
+                <span class="des-left-bottom">Quantity (1)</span>
+            </span>
+            <span class="descrip-img-onright">$100</span>
+            </div>
+            <div class="clr-div"></div>
+        </div>
+        <div class="gift-code">
+        <p class="gift-code-des">If you have our gift card, enter the code to get discounts</p>
+        <form action="">
+            <input class="inp-gift" type="text" placeholder="Gift card">
+            <button class="btn-gift" type="submit">APPLY</button>
+        </form>
+        </div>
+        <div class="buy-des">
+            <span class="buy-des-left">Subtotal</span>
+            <span class="buy-des-right">$100.00</span>
+            <div class="clr-div"></div>
+            <span class="buy-des-left">Shipping</span>
+            <span class="buy-des-right">Calculated at next step</span>
+            <div class="clr-div"></div>
+            </div>
+            <div class="total-price">
+                <span class="total-price-l">Total</span>
+                <span class="total-price-r">$100.00</span>
+                <div class="clr-div"></div>
+            </div>
+            <div class="foot-left">
+                Secure Checkout
+            </div>
+        </div>
+    </div>
     </div>  
     <div class="clr-div"></div>
     <!--* Footer -->

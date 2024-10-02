@@ -1,7 +1,5 @@
 .left-div{
     float: left;
-    position: sticky;
-    overflow: hidden;
     width: 50%;
     padding-left: 80px;
     padding-right: 80px;
@@ -10,6 +8,13 @@
 }
 .right-div{
     width: 50%;
+    background-color: #F5F5F7;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: left;
+    position: sticky;
 }
 .clr-div{
     clear: both;
@@ -32,6 +37,9 @@ footer{
     font-weight: 500;
     size: 14px;
     line-height: 16.8px;
+}
+.img-arw{
+    display: inline-block;
 }
 #hav-acc{
     background-color: #D2D2D7;
@@ -75,6 +83,7 @@ h3{
 }
 .inp{
     margin-top: 16px;
+    padding-left: 16px;
 }
 .steps{
     text-align: left;
@@ -85,10 +94,12 @@ h3{
     width: 50%;
     float: left;
     margin-right: 1%;
+    padding-left: 16px;
 }
 .half-inp2{
     margin-top: 16px;
     width: 49%;
+    padding-left: 16px;
 }
 .chkbox{
     margin-top: 12px;
@@ -105,4 +116,117 @@ h3{
     margin-top: 12px;
     float: left;
     margin-left: 12px;
+}
+.flower-img{
+    width: 160px;
+    height: 160px;
+    float: left;
+    margin-right: 16px;
+}
+.des-left-top{
+    font-family: Roboto;
+    font-weight: 500;
+    size: 18px;
+    line-height: 25.2px;
+    float: left;
+}
+.des-left-bottom{
+    font-family: Roboto;
+    font-weight: 400;
+    size: 16px;
+    line-height: 22.4px;
+    float: left;
+}
+.descrip-img-onright{
+    font-family: Roboto;
+    font-weight: 400;
+    size: 18px;
+    line-height: 25.4px;
+    float: right;
+    padding-top: 10px;
+}
+.descrip-img-onleft{
+    float: left;
+    width: 15%;
+}
+.img-w-details{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:rgba(146, 138, 138, 0.5);
+    padding-bottom: 24px;
+}
+.img-details{
+    text-align: center;
+    padding-top: 35.5px;
+}
+.gift-code{
+    font-family: Roboto;
+    font-weight: 400;
+    size: 16px;
+    line-height: 22.4px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:rgba(146, 138, 138, 0.5);
+}
+.inp-gift{
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    padding-left: 16px;
+}
+.btn-gift{
+    background-color: black;
+    color: white;
+    height: 56px;
+    width: 49%;
+}
+.gift-code-des{
+    margin-bottom: 16px;
+}
+.buy-des{
+    font-family: Roboto;
+    font-weight: 400;
+    size: 16px;
+    line-height: 22.4px;
+    padding-top: 24px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:rgba(146, 138, 138, 0.5);
+}
+.buy-des-left{
+    float: left;
+    padding-bottom: 24px;
+}
+.buy-des-right{
+    float: right;
+    padding-bottom: 24px;
+}
+.total-price{
+    margin-top: 24px;
+}
+.total-price-l{
+    float:left;
+    font-family: Roboto;
+    font-weight: 500;
+    size: 18px;
+    line-height: 25.2px;
+}
+.total-price-r{
+    float: right;
+    font-family: Roboto;
+    font-weight: 400;
+    size: 21px;
+    line-height: 22.4px;
+}
+.foot-left{
+    text-align:center;
+    font-family: Roboto;
+    font-weight: 400;
+    size: 14px;
+    line-height: 16.8px;
+    position: absolute;
+    bottom: 40px;
+    left:71%;
 }
