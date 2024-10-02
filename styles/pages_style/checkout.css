@@ -80,3 +80,29 @@ h3{
     text-align: left;
     margin-bottom: 40px;
 }
+.half-inp1{
+    margin-top: 16px;
+    width: 50%;
+    float: left;
+    margin-right: 1%;
+}
+.half-inp2{
+    margin-top: 16px;
+    width: 49%;
+}
+.chkbox{
+    margin-top: 12px;
+    background-color: #D2D2D7;
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+.add-chk{
+    font-family: Roboto;
+    font-weight: 500;
+    size: 14px;
+    line-height: 16.8px;
+    margin-top: 12px;
+    float: left;
+    margin-left: 12px;
+}
