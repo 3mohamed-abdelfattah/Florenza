@@ -79,39 +79,46 @@
             "category": "Dried Flowers",
             "items": [
                 {
-                    "title": "Spring Tulips",
+                    "title": "Chic Off-White and Blue Dried Arrangement",
                     "price": 19.99,
-                    "description": "A fresh collection of multicolored tulips for the perfect spring gift.",
+                    "description": "A stylish blend of off-white and blue dried flowers, perfect for a serene accent.",
                     "vase": true,
-                    "image": "/images/tulips/spring_tulips.jpg"
+                    "image": "item1.webp"
                 },
                 {
-                    "title": "White Elegance Tulips",
+                    "title": "Crimson and Ivory Elegance",
                     "price": 22.50,
-                    "description": "Simple and sophisticated white tulips for any occasion.",
+                    "description": "A timeless combination of red and white dried flowers, ideal for a bold statement",
                     "vase": false,
-                    "image": "/images/tulips/white_elegance_tulips.jpg"
+                    "image": "item2.webp"
                 },
                 {
-                    "title": "Purple Majesty Tulips",
+                    "title": "Blueberry Bliss and Purple Harmony",
                     "price": 25.00,
-                    "description": "Royal purple tulips that stand out in any bouquet.",
+                    "description": "A delightful combination of purple and blueberry dried flowers, perfect for a refreshing accent.",
                     "vase": true,
-                    "image": "/images/tulips/purple_majesty_tulips.jpg"
+                    "image": "item3.webp"
                 },
                 {
-                    "title": "Pink Charm Tulips",
+                    "title": "Deep Crimson Elegance",
                     "price": 21.99,
-                    "description": "Bright and cheerful pink tulips that add a pop of color.",
+                    "description": "A bold arrangement of dark red dried flowers, perfect for a dramatic touch.",
                     "vase": false,
-                    "image": "/images/tulips/pink_charm_tulips.jpg"
+                    "image": "item4.webp"
+                },
+                {
+                    "title": "Moody Forest Fusion",
+                    "price": 23.99,
+                    "description": "A rich blend of dark green, dark blue, purple, and off-white dried flowers, perfect for an earthy accent.",
+                    "vase": true,
+                    "image": "item5.webp"
                 },
                 {
                     "title": "Orange Flame Tulips",
                     "price": 23.99,
                     "description": "Striking orange tulips that bring warmth to any arrangement.",
                     "vase": true,
-                    "image": "/images/tulips/orange_flame_tulips.jpg"
+                    "image": "item6.webp"
                 }
             ]
         },
