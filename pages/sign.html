@@ -10,39 +10,46 @@
     <link href="./../styles/pages_style/sign.css" rel="stylesheet">
     <title>Florenza</title>
 </head>
+
 <body>
-    <div class="main-div">
+    <div class="main-div w-5/12 drop-shadow-2xl">
         <div class="sign-in">
-            <div class="header">Sign in</div>
-            <div class="body">Become a member and enjoy personalized gift recommendations, fast checkout, and more.</div>
+            <div class="container_text header">
+                <p class="text">Sign in</p>
+            </div>
+            <div class="container_text body">
+                <p class="text">
+                    Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread Joy with Our Online Flower Delivery
+                    Service.
+                </p>
+            </div>
             <form action="" method="post">
                 <label>Email</label>
-                <br>
-                <input type="text" placeholder="example@gmail.com">
+                <input type="text" placeholder="example@gmail.com" class="pl-1">
                 <hr>
                 <br>
                 <label>Password</label>
-                <br>
-                <input type="password" placeholder="********">
+                <input type="password" placeholder="********" class="pl-1">
                 <hr>
                 <br>
-                <button type="submit" id="btn">submit</button>
+                <button type="submit" id="btn">Sign in </button>
             </form>
             <div>
                 <h6 id="forgetPass">Forget your password?</h6>
                 <a id="resPass" href="">Reset password</a>
             </div>
         </div>
-        <footer>
+        <footer class="flex justify-center gap-2 underline mb-10">
             <a href="" class="foot">
                 Privacy Policy
             </a>
-            <a href="" class="foot" id="bordfoot">
+            |
+            <a href="" class="foot">
                 Terms and Conditions
             </a>
         </footer>
     </div>
     <script src="sign-in.js"></script>
 </body>
-</body>
+
 </html>

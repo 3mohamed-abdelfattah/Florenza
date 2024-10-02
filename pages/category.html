@@ -6,12 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./../assets/img/Logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="./../styles/" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/global.css">
     <title>Florenza</title>
 </head>
 
 <body>
+    <!--* Header -->
+    <header class="fixed top-0 w-full z-50 bg-white">
+        <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
+            <ul class="flex border-l-0">
+                <li class="px-6 py-8 w-[180px] border-l-0"><a href="../pages/category.html">Shop</a></li>
+                <li class="px-6 py-8 w-[180px]"><a href="../pages/about.html">About</a></li>
+            </ul>
+            <ul class="flex">
+                <li class="px-6 py-8 w-[180px]"><a href="./pages/sign.html">Sign in</a></li>
+                <li class="px-6 py-8 w-[180px] border-r-0"><a href="./pages/checkout.html">Cart</a></li>
+            </ul>
+        </span>
+    </header>
 
+
+
+    <!--* Footer -->
+    <footer class="flex border-b">
+        <!-- first col -->
+        <section class="flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
+            <p class="text-[#121212] leading-6">
+                Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas...
+                Reminds you 7 days before. No spam or sharing your address
+            </p>
+            <span class="flex flex-col gap-4 w-full">
+                <input class="border p-4 w-full" type="text" placeholder="Your Email">
+                <button class="w-full bg-black text-white px-6 py-3 uppercase">Remind</button>
+            </span>
+        </section>
+        <!-- second col -->
+        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+            <p class="text-[#808080] font-medium text-xl">Contact Us</p>
+            <div class="flex flex-col gap-6">
+                <span class="flex flex-col gap-2">
+                    <p class="text-[#808080] text-sm font-normal">Address</p>
+                    <p class="font-medium text-[#121212]">15/4 Khreshchatyk Street, Kyiv</p>
+                </span>
+                <span class="flex flex-col gap-2">
+                    <p class="text-[#808080] text-sm font-normal">Phone</p>
+                    <p class="font-medium text-[#121212]">+380980099777</p>
+                </span>
+                <span class="flex flex-col gap-2">
+                    <p class="text-[#808080] text-sm font-normal">General Enquiry:</p>
+                    <p class="font-medium text-[#121212]">Kiev.Florist.Studio@gmail.com</p>
+                </span>
+                <p class="text-[#808080] font-medium text-xl">Follow Us</p>
+                <span>
+                    <span class="flex gap-8 justify-center items-center w-full">
+                        <a href=""> <img src="../assets/img/icons/Instagram.svg" alt="social icon"> </a>
+                        <a href=""> <img src="../assets/img/icons/Pinterest.svg" alt="social icon"> </a>
+                        <a href=""> <img src="../assets/img/icons/Facebook.svg" alt="social icon"> </a>
+                        <a href=""> <img src="../assets/img/icons/Twitter.svg" alt="social icon"> </a>
+                        <a href=""> <img src="../assets/img/icons/Telegram.svg" alt="social icon"> </a>
+                    </span>
+                </span>
+            </div>
+        </section>
+        <!-- third col -->
+        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+            <span>
+                <p class="text-[#808080] font-medium text-xl mb-6">Shop</p>
+                <ul class="flex flex-col gap-2 text-[#121212] font-medium">
+                    <li><a href=""> All Products </a></li>
+                    <li><a href=""> Fresh Flowers </a></li>
+                    <li><a href=""> Dried Flowers </a></li>
+                    <li><a href=""> Live Plants </a></li>
+                    <li><a href=""> Designer Vases </a></li>
+                    <li><a href=""> Aroma Candles </a></li>
+                    <li><a href=""> Freshener Diffuser </a></li>
+                </ul>
+            </span>
+            <span>
+                <p class="text-[#808080] font-medium text-xl mb-6">Service</p>
+                <ul class="flex flex-col gap-2 text-[#121212] font-medium">
+                    <li> <a href=""> Flower Subcription </a>
+                    </li>
+                    <li><a href=""> Wedding & Event Decor </a></li>
+                </ul>
+            </span>
+        </section>
+        <!-- fourth col -->
+        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+            <p class="text-[#808080] font-medium text-xl">About Us</p>
+            <ul class="flex flex-col gap-2 text-[#121212] font-medium">
+                <li class="mb-1"> <a href=""> Our story </a></li>
+                <li class="mb-6"> <a href=""> Blog </a> </li>
+                <li> <a href=""> Shipping & returns </a> </li>
+                <li> <a href=""> Terms & conditions </a> </li>
+                <li> <a href=""> Privacy policy </a> </li>
+            </ul>
+        </section>
+    </footer>
 </body>
 
 </html>

@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* font-family: "Dancing Script", cursive; */
-
 * {
     transition: all 0.1s ease-out;
+    border-color: black !important;
     /* outline: 1px solid red; */
 }
 
@@ -24,4 +23,74 @@ html {
 
 li {
     list-style: none;
+}
+
+input {
+    border-color: #D2D2D7 !important;
+}
+
+/* Main Header Global Style */
+header {
+    border: 1px solid #121212;
+}
+
+header>span>ul {
+    border-left: 1px solid #121212;
+}
+
+header>span>ul>li {
+    border-right: 1px solid #121212;
+}
+
+.font_dance {
+    font-family: "Dancing Script", cursive;
+}
+
+/* Images Transitions */
+.img-hover {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.img-hover img {
+    object-fit: fill;
+    transition: transform 0.7s ease;
+}
+
+.img-hover img:hover {
+    transform: scale(1.05);
+}
+
+/* Text Animations */
+.container_text {
+    overflow: hidden;
+    position: relative;
+}
+
+.text {
+    transform: translateY(100%) rotate(45deg) scale(0.9);
+    opacity: 0;
+    transform-origin: left;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease, text-shadow 0.5s ease;
+    text-shadow: none;
+}
+
+@keyframes text-appear {
+    from {
+        transform: translateY(100%) rotate(25deg) scale(0.9);
+        opacity: 0;
+        text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    to {
+        transform: translateY(0) rotate(0) scale(1);
+        opacity: 1;
+        text-shadow: none;
+    }
+}
+
+/* Animation on page load */
+.container_text .text {
+    animation: text-appear 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.3s;
 }
