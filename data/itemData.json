@@ -173,39 +173,46 @@
             "category": "Aroma Candels",
             "items": [
                 {
-                    "title": "Purple Orchid",
+                    "title": "Sleek Glass Aroma Candle",
                     "price": 45.99,
-                    "description": "An exotic purple orchid in a decorative pot, perfect for gifting.",
+                    "description": "A stylish transparent candle with a wooden cover, perfect for a warm, inviting ambiance.",
                     "vase": true,
-                    "image": "/images/orchids/purple_orchid.jpg"
+                    "image": "item1.webp"
                 },
                 {
-                    "title": "White Orchid Elegance",
+                    "title": "Blush Pink Aroma Candle",
                     "price": 49.99,
-                    "description": "A classic white orchid that symbolizes purity and beauty.",
+                    "description": "A soft pink candle that infuses your space with a delicate, soothing fragrance.",
                     "vase": true,
-                    "image": "/images/orchids/white_orchid_elegance.jpg"
+                    "image": "item2.webp"
                 },
                 {
-                    "title": "Pink Orchid Delight",
+                    "title": "Charcoal Elegance Aroma Candle",
                     "price": 42.50,
-                    "description": "Beautiful pink orchids to add a touch of elegance.",
+                    "description": "A sleek light black candle that adds a touch of sophistication while releasing a calming scent.",
                     "vase": false,
-                    "image": "/images/orchids/pink_orchid_delight.jpg"
+                    "image": "item3.webp"
                 },
                 {
-                    "title": "Yellow Orchid Bloom",
+                    "title": "Zesty Lemon Mint Aroma Candle",
                     "price": 44.00,
-                    "description": "Radiant yellow orchids that bring sunshine indoors.",
+                    "description": "A refreshing candle that combines invigorating lemon and cool mint scents, perfect for a revitalizing atmosphere.",
                     "vase": true,
-                    "image": "/images/orchids/yellow_orchid_bloom.jpg"
+                    "image": "item4.webp"
                 },
                 {
-                    "title": "Blue Orchid Fantasy",
+                    "title": "Pure White Aroma Candle",
                     "price": 50.99,
-                    "description": "A unique blue orchid, perfect for a striking display.",
+                    "description": "A classic white candle that emits a soft, clean fragrance, perfect for creating a serene environment.",
                     "vase": false,
-                    "image": "/images/orchids/blue_orchid_fantasy.jpg"
+                    "image": "item5.webp"
+                },
+                {
+                    "title": "Soft Baby Blue Aroma Candle",
+                    "price": 50.99,
+                    "description": "A gentle baby blue candle that brings a calming fragrance, perfect for a tranquil ambiance.",
+                    "vase": false,
+                    "image": "item6.webp"
                 }
             ]
         },
