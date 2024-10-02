@@ -220,46 +220,46 @@
             "category": "Fresheners",
             "items": [
                 {
-                    "title": "Golden Sunflower Bouquet",
+                    "title": "Freshener with Wooden Cover",
                     "price": 20.99,
-                    "description": "A bright and cheerful bouquet of sunflowers to brighten any day.",
+                    "description": "A sleek freshener that adds a natural touch to your space.",
                     "vase": true,
-                    "image": "/images/sunflowers/golden_sunflower_bouquet.jpg"
+                    "image": "item1.webp"
                 },
                 {
-                    "title": "Sunshine Sunflowers",
+                    "title": "Pink Glass Freshener",
                     "price": 22.75,
-                    "description": "A lovely arrangement of sunflowers in a decorative vase.",
+                    "description": "A stylish freshener in a pink glass cover for a lovely fragrance.",
                     "vase": true,
-                    "image": "/images/sunflowers/sunshine_sunflowers.jpg"
+                    "image": "item2.webp"
                 },
                 {
-                    "title": "Sunflower Fields",
+                    "title": "Mint Green Freshener",
                     "price": 19.50,
-                    "description": "A simple yet stunning collection of fresh sunflowers.",
+                    "description": "A refreshing mint green freshener that invigorates your space.",
                     "vase": false,
-                    "image": "/images/sunflowers/sunflower_fields.jpg"
+                    "image": "item3.webp"
                 },
                 {
-                    "title": "Rustic Sunflowers",
+                    "title": "Classic Freshener",
                     "price": 24.99,
-                    "description": "Sunflowers arranged in a rustic style for a cozy feel.",
+                    "description": "A timeless freshener that brings a subtle, refreshing scent.",
                     "vase": true,
-                    "image": "/images/sunflowers/rustic_sunflowers.jpg"
+                    "image": "item4.webp"
                 },
                 {
-                    "title": "Sunflower Dreams",
+                    "title": "Ocean Breeze Freshener",
                     "price": 21.99,
-                    "description": "A dreamy collection of sunflowers to make any day brighter.",
+                    "description": "A freshener with blue ocean and sea salt scent for a coastal vibe.",
                     "vase": false,
-                    "image": "/images/sunflowers/sunflower_dreams.jpg"
+                    "image": "item5.webp"
                 },
                 {
-                    "title": "Sunshine & Smiles",
+                    "title": "Driftwood Chamomile Freshener",
                     "price": 26.50,
-                    "description": "A bright sunflower bouquet, perfect for spreading happiness.",
+                    "description": "A soothing freshener combining driftwood and chamomile for a calming aroma.",
                     "vase": true,
-                    "image": "/images/sunflowers/sunshine_smiles.jpg"
+                    "image": "item6.webp"
                 }
             ]
         }
