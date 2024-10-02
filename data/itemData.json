@@ -1,0 +1,267 @@
+{
+    "categories": [
+        {
+            "category": "Fresh Flowers",
+            "items": [
+                {
+                    "title": "Elegant Blue and White Bouquet",
+                    "price": 29.99,
+                    "description": "A graceful mix of white roses and blue blooms, perfect for any occasion.",
+                    "vase": true,
+                    "image": "item1.webp"
+                },
+                {
+                    "title": "Vibrant Mixed Roses",
+                    "price": 24.99,
+                    "description": "A colorful arrangement of mixed roses, ideal for brightening up any event.",
+                    "vase": false,
+                    "image": "item2.webp"
+                },
+                {
+                    "title": "Soft Pastel Floral Arrangement",
+                    "price": 27.99,
+                    "description": "A soft blend of pastel flowers, perfect for a gentle, elegant touch.",
+                    "vase": true,
+                    "image": "item3.webp"
+                },
+                {
+                    "title": "Delicate Pink and Yellow Bouquet",
+                    "price": 26.50,
+                    "description": "A charming mix of pink and yellow flowers, perfect for a soft, cheerful gesture.",
+                    "vase": false,
+                    "image": "item4.webp"
+                },
+                {
+                    "title": "Romantic Pink and Dark Red Bouquet",
+                    "price": 30.99,
+                    "description": "A striking blend of pink and dark red flowers, perfect for a passionate gesture.",
+                    "vase": true,
+                    "image": "item5.webp"
+                },
+                {
+                    "title": "Classic Off-White Bouquet",
+                    "price": 32.00,
+                    "description": "A timeless arrangement of off-white blooms, perfect for any elegant occasion.",
+                    "vase": true,
+                    "image": "item6.jpeg"
+                },
+                {
+                    "title": "Elegant Peach Bouquet",
+                    "price": 28.75,
+                    "description": "A soft arrangement of peach-colored flowers, perfect for a warm and elegant touch.",
+                    "vase": false,
+                    "image": "item7.webp"
+                },
+                {
+                    "title": "Simple Pink Bouquet",
+                    "price": 27.75,
+                    "description": "A delicate collection of pink flowers, perfect for a sweet and simple gesture.",
+                    "vase": false,
+                    "image": "item8.webp"
+                },
+                {
+                    "title": "Vibrant Mixed Color Bouquet",
+                    "price": 26.75,
+                    "description": "A lively assortment of colorful blooms, perfect for brightening any occasion.",
+                    "vase": false,
+                    "image": "item9.webp"
+                },
+                {
+                    "title": "Warm Mixed Orange Bouquet",
+                    "price": 24.75,
+                    "description": "A vibrant mix of orange blooms, perfect for adding warmth to any setting.",
+                    "vase": false,
+                    "image": "item10.webp"
+                }
+            ]
+        },
+        {
+            "category": "Dried Flowers",
+            "items": [
+                {
+                    "title": "Chic Off-White and Blue Dried Arrangement",
+                    "price": 19.99,
+                    "description": "A stylish blend of off-white and blue dried flowers, perfect for a serene accent.",
+                    "vase": true,
+                    "image": "item1.webp"
+                },
+                {
+                    "title": "Crimson and Ivory Elegance",
+                    "price": 22.50,
+                    "description": "A timeless combination of red and white dried flowers, ideal for a bold statement",
+                    "vase": false,
+                    "image": "item2.webp"
+                },
+                {
+                    "title": "Blueberry Bliss and Purple Harmony",
+                    "price": 25.00,
+                    "description": "A delightful combination of purple and blueberry dried flowers, perfect for a refreshing accent.",
+                    "vase": true,
+                    "image": "item3.webp"
+                },
+                {
+                    "title": "Deep Crimson Elegance",
+                    "price": 21.99,
+                    "description": "A bold arrangement of dark red dried flowers, perfect for a dramatic touch.",
+                    "vase": false,
+                    "image": "item4.webp"
+                },
+                {
+                    "title": "Moody Forest Fusion",
+                    "price": 23.99,
+                    "description": "A rich blend of dark green, dark blue, purple, and off-white dried flowers, perfect for an earthy accent.",
+                    "vase": true,
+                    "image": "item5.webp"
+                },
+                {
+                    "title": "Orange Flame Tulips",
+                    "price": 23.99,
+                    "description": "Striking orange tulips that bring warmth to any arrangement.",
+                    "vase": true,
+                    "image": "item6.webp"
+                }
+            ]
+        },
+        {
+            "category": "Live Plants",
+            "items": [
+                {
+                    "title": "Lush Green Serenity",
+                    "price": 34.50,
+                    "description": "A vibrant green plant that adds life and freshness to any space.",
+                    "vase": true,
+                    "image": "item1.webp"
+                },
+                {
+                    "title": "Verdant Leafy Delight",
+                    "price": 36.00,
+                    "description": "A beautiful plant featuring rich green leaves, perfect for enhancing your indoor oasis.",
+                    "vase": false,
+                    "image": "item2.webp"
+                },
+                {
+                    "title": "Gentle Green Foliage",
+                    "price": 33.99,
+                    "description": "A soft, lush plant with delicate green leaves, ideal for creating a calming atmosphere.",
+                    "vase": true,
+                    "image": "item3.webp"
+                },
+                {
+                    "title": "Graceful Thin Green Leaves",
+                    "price": 31.75,
+                    "description": "An elegant plant with slender green leaves, perfect for adding a touch of sophistication.",
+                    "vase": false,
+                    "image": "item4.webp"
+                },
+                {
+                    "title": "Textured Green Leaves",
+                    "price": 35.99,
+                    "description": "A hardy plant featuring rough green leaves, perfect for adding a rustic charm to your space",
+                    "vase": true,
+                    "image": "item5.webp"
+                },
+                {
+                    "title": "Wavy Green Elegance",
+                    "price": 35.99,
+                    "description": "A unique plant with wavy green leaves, adding a playful touch to any decor.",
+                    "vase": true,
+                    "image": "item6.webp"
+                }
+            ]
+        },
+        {
+            "category": "Aroma Candels",
+            "items": [
+                {
+                    "title": "Sleek Glass Aroma Candle",
+                    "price": 45.99,
+                    "description": "A stylish transparent candle with a wooden cover, perfect for a warm, inviting ambiance.",
+                    "vase": true,
+                    "image": "item1.webp"
+                },
+                {
+                    "title": "Blush Pink Aroma Candle",
+                    "price": 49.99,
+                    "description": "A soft pink candle that infuses your space with a delicate, soothing fragrance.",
+                    "vase": true,
+                    "image": "item2.webp"
+                },
+                {
+                    "title": "Charcoal Elegance Aroma Candle",
+                    "price": 42.50,
+                    "description": "A sleek light black candle that adds a touch of sophistication while releasing a calming scent.",
+                    "vase": false,
+                    "image": "item3.webp"
+                },
+                {
+                    "title": "Zesty Lemon Mint Aroma Candle",
+                    "price": 44.00,
+                    "description": "A refreshing candle that combines invigorating lemon and cool mint scents, perfect for a revitalizing atmosphere.",
+                    "vase": true,
+                    "image": "item4.webp"
+                },
+                {
+                    "title": "Pure White Aroma Candle",
+                    "price": 50.99,
+                    "description": "A classic white candle that emits a soft, clean fragrance, perfect for creating a serene environment.",
+                    "vase": false,
+                    "image": "item5.webp"
+                },
+                {
+                    "title": "Soft Baby Blue Aroma Candle",
+                    "price": 50.99,
+                    "description": "A gentle baby blue candle that brings a calming fragrance, perfect for a tranquil ambiance.",
+                    "vase": false,
+                    "image": "item6.webp"
+                }
+            ]
+        },
+        {
+            "category": "Fresheners",
+            "items": [
+                {
+                    "title": "Freshener with Wooden Cover",
+                    "price": 20.99,
+                    "description": "A sleek freshener that adds a natural touch to your space.",
+                    "vase": true,
+                    "image": "item1.webp"
+                },
+                {
+                    "title": "Pink Glass Freshener",
+                    "price": 22.75,
+                    "description": "A stylish freshener in a pink glass cover for a lovely fragrance.",
+                    "vase": true,
+                    "image": "item2.webp"
+                },
+                {
+                    "title": "Mint Green Freshener",
+                    "price": 19.50,
+                    "description": "A refreshing mint green freshener that invigorates your space.",
+                    "vase": false,
+                    "image": "item3.webp"
+                },
+                {
+                    "title": "Classic Freshener",
+                    "price": 24.99,
+                    "description": "A timeless freshener that brings a subtle, refreshing scent.",
+                    "vase": true,
+                    "image": "item4.webp"
+                },
+                {
+                    "title": "Ocean Breeze Freshener",
+                    "price": 21.99,
+                    "description": "A freshener with blue ocean and sea salt scent for a coastal vibe.",
+                    "vase": false,
+                    "image": "item5.webp"
+                },
+                {
+                    "title": "Driftwood Chamomile Freshener",
+                    "price": 26.50,
+                    "description": "A soothing freshener combining driftwood and chamomile for a calming aroma.",
+                    "vase": true,
+                    "image": "item6.webp"
+                }
+            ]
+        }
+    ]
+}

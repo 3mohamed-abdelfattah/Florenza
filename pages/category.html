@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" href="./../assets/img/Logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/pages_style/homePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <title>Florenza</title>
 </head>
 
@@ -15,7 +17,7 @@
     <header class="fixed top-0 w-full z-50 bg-white">
         <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
             <ul class="flex border-l-0">
-                <li class="px-6 py-8 w-[180px] border-l-0"><a href="../pages/category.html">Shop</a></li>
+                <li class="px-6 py-8 w-[180px] border-l-0"><a href="../index.html">Home</a></li>
                 <li class="px-6 py-8 w-[180px]"><a href="../pages/about.html">About</a></li>
             </ul>
             <ul class="flex">
@@ -25,10 +27,113 @@
         </span>
     </header>
 
+    <!--* Hero Section -->
+    <main class="flex items-start mt-[85px]">
+        <!-- Left Colum Side -->
+        <section class="sticky top-[40%] w-full flex justify-center items-center">
+            <aside class="w-[560px]">
+                <!-- Choose Section -->
+                <span class="flex container_text text-center justify-center items-center">
+                    <p class="text text-7xl font-medium text-[#121212] p-20">
+                        Choose a Category...
+                    </p>
+                </span>
+            </aside>
+        </section>
+
+        <!-- Right Colum Side -->
+        <section class="flex flex-col w-full items-end">
+            <!-- Item 1 -->
+            <article class="flex relative">
+                <a href="./catogry_pages/fresh_flowers.html" class="flex static">
+                    <span class="p-6 border-l h-[360px] w-[360px] flex flex-col justify-center items-center text-center"
+                        data-aos="fade-right">
+                        <p class="text-[38px]" data-aos="zoom-in">Fresh Flowers</p>
+                        <button class="flex absolute bottom-6 gap-1 hover:scale-110">
+                            Shop now
+                            <img src="../assets/img/icons/arrow-right.svg" alt="right arrow"
+                                class="transition ease-in-out delay-150 hover:translate-x-2 hover:scale-110 duration-300">
+                        </button>
+                    </span>
+                    <div class="img-container" data-aos="fade-left">
+                        <img src="../assets/img/for_home/card_item/card_item1.webp" alt="Flower Image">
+                    </div>
+                </a>
+            </article>
+            <!-- Item 2 -->
+            <article class="flex relative">
+                <a href="./catogry_pages/dried_flowers.html" class="flex static">
+                    <div class="img-container" data-aos="fade-right">
+                        <img src="../assets/img/for_home/card_item/card_item2.webp" alt="Flower Image">
+                    </div>
+                    <span class="p-6 h-[360px] w-[360px] flex flex-col justify-center items-center text-center"
+                        data-aos="fade-left">
+                        <p class="text-[38px]" data-aos="zoom-in">Dried Flowers</p>
+                        <button class="flex absolute bottom-6 gap-1 hover:scale-110">
+                            <img src="../assets/img/icons/arrow-left.svg" alt="right arrow"
+                                class="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300">
+                            Shop now
+                        </button>
+                    </span>
+                </a>
+            </article>
+            <!-- Item 3 -->
+            <article class="flex relative">
+                <a href="./catogry_pages/live_plants.html" class="flex static">
+                    <span data-aos="fade-right"
+                        class="p-6 border-l h-[360px] w-[360px] flex flex-col justify-center items-center text-center">
+                        <p class="text-[38px]" data-aos="zoom-in">Live Plants</p>
+                        <button class="flex absolute bottom-6 gap-1 hover:scale-110">
+                            Shop now
+                            <img src="../assets/img/icons/arrow-right.svg" alt="right arrow"
+                                class="transition ease-in-out delay-150 hover:translate-x-2 hover:scale-110 duration-300">
+                        </button>
+                    </span>
+                    <div class="img-container" data-aos="fade-left">
+                        <img src="../assets/img/for_home/card_item/card_item3.webp" alt="Flower Image">
+                    </div>
+                </a>
+            </article>
+            <!-- Item 4 -->
+            <article class="flex relative">
+                <a href="./catogry_pages/aroma_candels.html" class="flex static">
+                    <div class="img-container" data-aos="fade-right">
+                        <img src="../assets/img/for_home/card_item/card_item4.webp" alt="Flower Image">
+                    </div>
+                    <span class="p-6 h-[360px] w-[360px] flex flex-col justify-center items-center text-center"
+                        data-aos="fade-left">
+                        <p class="text-[38px]" data-aos="zoom-in">Aroma Candels</p>
+                        <button class="flex absolute bottom-6 gap-1 hover:scale-110">
+                            <img src="../assets/img/icons/arrow-left.svg" alt="right arrow"
+                                class="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300">
+                            Shop now
+                        </button>
+                    </span>
+                </a>
+            </article>
+            <!-- Item 5 -->
+            <article class="flex relative">
+                <a href="./catogry_pages/fresheners.html" class="flex static">
+                    <span data-aos="fade-right"
+                        class="p-6 border-l h-[360px] w-[360px] flex flex-col justify-center items-center text-center">
+                        <p class="text-[38px]" data-aos="zoom-in">Fresheners</p>
+                        <button class="flex absolute bottom-6 gap-1 hover:scale-110">
+                            Shop now
+                            <img src="../assets/img/icons/arrow-right.svg" alt="right arrow"
+                                class="transition ease-in-out delay-150 hover:translate-x-2 hover:scale-110 duration-300">
+                        </button>
+                    </span>
+                    <div class="img-container" data-aos="fade-left">
+                        <img src="../assets/img/for_home/card_item/card_item5.webp" alt="Flower Image">
+                    </div>
+                </a>
+            </article>
+        </section>
+    </main>
 
 
     <!--* Footer -->
-    <footer class="flex border-b">
+    <footer class="flex border-b border-t">
         <!-- first col -->
         <section class="flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
             <p class="text-[#121212] leading-6">
@@ -103,6 +208,14 @@
             </ul>
         </section>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 800,
+            });
+        });
+    </script>
 </body>
 
 </html>
