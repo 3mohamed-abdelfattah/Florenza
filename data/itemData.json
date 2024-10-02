@@ -126,39 +126,46 @@
             "category": "Live Plants",
             "items": [
                 {
-                    "title": "Classic White Lilies",
+                    "title": "Lush Green Serenity",
                     "price": 34.50,
-                    "description": "Timeless white lilies with a graceful touch for any occasion.",
+                    "description": "A vibrant green plant that adds life and freshness to any space.",
                     "vase": true,
-                    "image": "/images/lilies/classic_white_lilies.jpg"
+                    "image": "item1.webp"
                 },
                 {
-                    "title": "Stargazer Lilies",
+                    "title": "Verdant Leafy Delight",
                     "price": 36.00,
-                    "description": "Dramatic stargazer lilies that are perfect for making a bold statement.",
+                    "description": "A beautiful plant featuring rich green leaves, perfect for enhancing your indoor oasis.",
                     "vase": false,
-                    "image": "/images/lilies/stargazer_lilies.jpg"
+                    "image": "item2.webp"
                 },
                 {
-                    "title": "Pink Lily Mix",
+                    "title": "Gentle Green Foliage",
                     "price": 33.99,
-                    "description": "A mixture of pink lilies for a soft and delicate arrangement.",
+                    "description": "A soft, lush plant with delicate green leaves, ideal for creating a calming atmosphere.",
                     "vase": true,
-                    "image": "/images/lilies/pink_lily_mix.jpg"
+                    "image": "item3.webp"
                 },
                 {
-                    "title": "Yellow Lily Surprise",
+                    "title": "Graceful Thin Green Leaves",
                     "price": 31.75,
-                    "description": "Bright yellow lilies that will bring joy and light to any room.",
+                    "description": "An elegant plant with slender green leaves, perfect for adding a touch of sophistication.",
                     "vase": false,
-                    "image": "/images/lilies/yellow_lily_surprise.jpg"
+                    "image": "item4.webp"
                 },
                 {
-                    "title": "Orange Lily Blaze",
+                    "title": "Textured Green Leaves",
                     "price": 35.99,
-                    "description": "Fiery orange lilies that make a bold and vibrant gift.",
+                    "description": "A hardy plant featuring rough green leaves, perfect for adding a rustic charm to your space",
                     "vase": true,
-                    "image": "/images/lilies/orange_lily_blaze.jpg"
+                    "image": "item5.webp"
+                },
+                {
+                    "title": "Wavy Green Elegance",
+                    "price": 35.99,
+                    "description": "A unique plant with wavy green leaves, adding a playful touch to any decor.",
+                    "vase": true,
+                    "image": "item6.webp"
                 }
             ]
         },
