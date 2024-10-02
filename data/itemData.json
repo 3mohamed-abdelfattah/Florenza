@@ -1,0 +1,225 @@
+{
+    "categories": [
+        {
+            "category": "Fresh Flowers",
+            "items": [
+                {
+                    "title": "Classic Red Roses",
+                    "price": 29.99,
+                    "description": "A beautiful bouquet of classic red roses, perfect for any romantic occasion.",
+                    "vase": true,
+                    "image": "/images/roses/classic_red_roses.jpg"
+                },
+                {
+                    "title": "Pink Passion Roses",
+                    "price": 24.99,
+                    "description": "Soft pink roses that bring a touch of elegance to any room.",
+                    "vase": false,
+                    "image": "/images/roses/pink_passion_roses.jpg"
+                },
+                {
+                    "title": "Sunshine Yellow Roses",
+                    "price": 27.99,
+                    "description": "Bright yellow roses that are perfect for a cheerful gift.",
+                    "vase": true,
+                    "image": "/images/roses/sunshine_yellow_roses.jpg"
+                },
+                {
+                    "title": "White Serenity Roses",
+                    "price": 26.50,
+                    "description": "Elegant white roses that symbolize purity and grace.",
+                    "vase": false,
+                    "image": "/images/roses/white_serenity_roses.jpg"
+                },
+                {
+                    "title": "Lavender Dream Roses",
+                    "price": 30.99,
+                    "description": "A stunning bouquet of lavender roses, ideal for a unique touch.",
+                    "vase": true,
+                    "image": "/images/roses/lavender_dream_roses.jpg"
+                },
+                {
+                    "title": "Rainbow Mixed Roses",
+                    "price": 32.00,
+                    "description": "A vibrant mix of multicolored roses for a lively arrangement.",
+                    "vase": true,
+                    "image": "/images/roses/rainbow_mixed_roses.jpg"
+                },
+                {
+                    "title": "Peach Delight Roses",
+                    "price": 28.75,
+                    "description": "Charming peach roses that make a sweet and soft statement.",
+                    "vase": false,
+                    "image": "/images/roses/peach_delight_roses.jpg"
+                }
+            ]
+        },
+        {
+            "category": "Dried Flowers",
+            "items": [
+                {
+                    "title": "Spring Tulips",
+                    "price": 19.99,
+                    "description": "A fresh collection of multicolored tulips for the perfect spring gift.",
+                    "vase": true,
+                    "image": "/images/tulips/spring_tulips.jpg"
+                },
+                {
+                    "title": "White Elegance Tulips",
+                    "price": 22.50,
+                    "description": "Simple and sophisticated white tulips for any occasion.",
+                    "vase": false,
+                    "image": "/images/tulips/white_elegance_tulips.jpg"
+                },
+                {
+                    "title": "Purple Majesty Tulips",
+                    "price": 25.00,
+                    "description": "Royal purple tulips that stand out in any bouquet.",
+                    "vase": true,
+                    "image": "/images/tulips/purple_majesty_tulips.jpg"
+                },
+                {
+                    "title": "Pink Charm Tulips",
+                    "price": 21.99,
+                    "description": "Bright and cheerful pink tulips that add a pop of color.",
+                    "vase": false,
+                    "image": "/images/tulips/pink_charm_tulips.jpg"
+                },
+                {
+                    "title": "Orange Flame Tulips",
+                    "price": 23.99,
+                    "description": "Striking orange tulips that bring warmth to any arrangement.",
+                    "vase": true,
+                    "image": "/images/tulips/orange_flame_tulips.jpg"
+                }
+            ]
+        },
+        {
+            "category": "Live Plants",
+            "items": [
+                {
+                    "title": "Classic White Lilies",
+                    "price": 34.50,
+                    "description": "Timeless white lilies with a graceful touch for any occasion.",
+                    "vase": true,
+                    "image": "/images/lilies/classic_white_lilies.jpg"
+                },
+                {
+                    "title": "Stargazer Lilies",
+                    "price": 36.00,
+                    "description": "Dramatic stargazer lilies that are perfect for making a bold statement.",
+                    "vase": false,
+                    "image": "/images/lilies/stargazer_lilies.jpg"
+                },
+                {
+                    "title": "Pink Lily Mix",
+                    "price": 33.99,
+                    "description": "A mixture of pink lilies for a soft and delicate arrangement.",
+                    "vase": true,
+                    "image": "/images/lilies/pink_lily_mix.jpg"
+                },
+                {
+                    "title": "Yellow Lily Surprise",
+                    "price": 31.75,
+                    "description": "Bright yellow lilies that will bring joy and light to any room.",
+                    "vase": false,
+                    "image": "/images/lilies/yellow_lily_surprise.jpg"
+                },
+                {
+                    "title": "Orange Lily Blaze",
+                    "price": 35.99,
+                    "description": "Fiery orange lilies that make a bold and vibrant gift.",
+                    "vase": true,
+                    "image": "/images/lilies/orange_lily_blaze.jpg"
+                }
+            ]
+        },
+        {
+            "category": "Aroma Candels",
+            "items": [
+                {
+                    "title": "Purple Orchid",
+                    "price": 45.99,
+                    "description": "An exotic purple orchid in a decorative pot, perfect for gifting.",
+                    "vase": true,
+                    "image": "/images/orchids/purple_orchid.jpg"
+                },
+                {
+                    "title": "White Orchid Elegance",
+                    "price": 49.99,
+                    "description": "A classic white orchid that symbolizes purity and beauty.",
+                    "vase": true,
+                    "image": "/images/orchids/white_orchid_elegance.jpg"
+                },
+                {
+                    "title": "Pink Orchid Delight",
+                    "price": 42.50,
+                    "description": "Beautiful pink orchids to add a touch of elegance.",
+                    "vase": false,
+                    "image": "/images/orchids/pink_orchid_delight.jpg"
+                },
+                {
+                    "title": "Yellow Orchid Bloom",
+                    "price": 44.00,
+                    "description": "Radiant yellow orchids that bring sunshine indoors.",
+                    "vase": true,
+                    "image": "/images/orchids/yellow_orchid_bloom.jpg"
+                },
+                {
+                    "title": "Blue Orchid Fantasy",
+                    "price": 50.99,
+                    "description": "A unique blue orchid, perfect for a striking display.",
+                    "vase": false,
+                    "image": "/images/orchids/blue_orchid_fantasy.jpg"
+                }
+            ]
+        },
+        {
+            "category": "Fresheners",
+            "items": [
+                {
+                    "title": "Golden Sunflower Bouquet",
+                    "price": 20.99,
+                    "description": "A bright and cheerful bouquet of sunflowers to brighten any day.",
+                    "vase": true,
+                    "image": "/images/sunflowers/golden_sunflower_bouquet.jpg"
+                },
+                {
+                    "title": "Sunshine Sunflowers",
+                    "price": 22.75,
+                    "description": "A lovely arrangement of sunflowers in a decorative vase.",
+                    "vase": true,
+                    "image": "/images/sunflowers/sunshine_sunflowers.jpg"
+                },
+                {
+                    "title": "Sunflower Fields",
+                    "price": 19.50,
+                    "description": "A simple yet stunning collection of fresh sunflowers.",
+                    "vase": false,
+                    "image": "/images/sunflowers/sunflower_fields.jpg"
+                },
+                {
+                    "title": "Rustic Sunflowers",
+                    "price": 24.99,
+                    "description": "Sunflowers arranged in a rustic style for a cozy feel.",
+                    "vase": true,
+                    "image": "/images/sunflowers/rustic_sunflowers.jpg"
+                },
+                {
+                    "title": "Sunflower Dreams",
+                    "price": 21.99,
+                    "description": "A dreamy collection of sunflowers to make any day brighter.",
+                    "vase": false,
+                    "image": "/images/sunflowers/sunflower_dreams.jpg"
+                },
+                {
+                    "title": "Sunshine & Smiles",
+                    "price": 26.50,
+                    "description": "A bright sunflower bouquet, perfect for spreading happiness.",
+                    "vase": true,
+                    "image": "/images/sunflowers/sunshine_smiles.jpg"
+                }
+            ]
+        }
+    ]
+}
