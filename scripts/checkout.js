@@ -115,35 +115,35 @@ document.getElementById("btn-sub").addEventListener('click',function (e) {
 invalidname1.addEventListener('input',function () {
     if (!userchk.test(invalidname1.value))
      {
-        invalidname1.style.borderColor="1px solid red !important"
+        invalidname1.class="border-red"
      }
     }
 )
 invalidemail.addEventListener('input',function () {
     if (!emailchk.test(invalidemail.value))
      {
-        invalidemail.style.borderColor="1px solid red !important"
+        invalidemail.class="border-red"
      }
     }
 )
 invalidphone.addEventListener('input',function () {
     if (!phonechk.test(invalidphone.value))
      {
-        invalidphone.style.border="1px solid red !important"
+        invalidphone.class="border-red"
      }
     }
 )
 invalidrecname.addEventListener('input',function () {
     if (!userchk.test(invalidrecname.value))
      {
-        invalidrecname.style.borderColor="1px solid red !important"
+        invalidrecname.class="border-red"
      }
     }
 )
 invalidrecphone.addEventListener('input',function () {
     if (!phonechk.test(invalidrecphone.value))
      {
-        invalidrecphone.style.borderColor="1px solid red !important"
+        invalidrecphone.class="border-red"
      }
     }
 )
