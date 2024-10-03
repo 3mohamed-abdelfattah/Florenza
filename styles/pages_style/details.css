@@ -1,0 +1,48 @@
+        .combination-item {
+            position: relative;
+            transition: transform 0.3s;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid rgba(128, 128, 128, 0.26) !important;
+            min-width: 144px;
+        }
+
+        .combination-item:hover {
+            transform: scale(1.05);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.308);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .combination-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .add-to-basket-btn {
+            background-color: #0000008e;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-basket-btn:hover {
+            background-color: #4444446c;
+        }
+
+        .quantity_button {
+            border-color: lightgray !important;
+        }

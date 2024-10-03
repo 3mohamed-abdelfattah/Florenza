@@ -7,11 +7,14 @@
     <link rel="icon" type="image/png" href="../../assets/img/Logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="../../styles/global.css" rel="stylesheet">
-    <link href="../../styles/pages_style/catogry.css" rel="stylesheet">
+    <link href="../../styles/pages_style/details.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <title>Florenza</title>
 </head>
 
 <body>
+
     <!--* Header -->
     <header class="fixed top-0 w-full z-50 bg-white">
         <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
@@ -28,19 +31,92 @@
         </span>
     </header>
 
-    <main class="flex justify-center items-center mt-[85px]">
-        <!-- Left Section -->
-        <section
-            class="sticky bottom-0 w-full bg-[url('../../assets/img/our_items/fresh_flower/item.webp')] h-svh bg-cover bg-center">
-            <div class="absolute bg-black/40 h-full w-full -z-10"></div>
-            <p class="flex justify-center items-center h-full text-white text-7xl font-semibold z-10">Fresh Flowers</p>
-        </section>
+    <!--* Order Section -->
+    <section class="flex justify-center mt-[85px]">
+        <div class="grid grid-cols-2 gap-4 items-start border-b max-h-screen">
+            <!-- Flower Image -->
+            <div id="flower-image" class="w-full h-auto">
+                <!-- Image will be inserted here -->
+            </div>
 
-        <!-- Right Section -->
-        <section id="fresh-flowers-list" class="flex flex-wrap w-full border border-b-0">
-            <!-- My Items Will Be Here ! -->
-        </section>
-    </main>
+            <!-- Flower Details -->
+            <div class="space-y-4 mt-5">
+                <p class="text-gray-500 uppercase">Live Plants :</p>
+                <h1 class="text-4xl font-medium" id="flower-title"></h1>
+                <p class="text-2xl font-medium" id="flower-price"></p>
+                <p id="flower-description" class="text-gray-500"></p>
+
+                <!-- Quantity Selector -->
+                <div class="flex items-center space-x-2">
+                    <p>Quantity</p>
+                    <div class="flex items-center rounded w-fit border quantity_button">
+                        <button id="decrease"
+                            class="px-2 text-xl hover:text-red-600 border-r quantity_button">-</button>
+                        <span id="quantity" class="px-4">1</span>
+                        <button id="increase"
+                            class="px-2 text-xl hover:text-green-600 border-l quantity_button">+</button>
+                    </div>
+                </div>
+
+                <!-- Combination Suggestions -->
+                <div class="relative">
+                    <p class="text-lg py-2">Excellent Combination with:</p>
+
+                    <div class="flex space-x-4 items-center overflow-hidden" id="combinations">
+                        <!-- Combination items will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Price Options -->
+                <div class="space-y-2">
+                    <p class="text-lg font-medium">Price options</p>
+                    <div class="flex items-center space-x-2">
+                        <input type="radio" name="price-option" checked>
+                        <label>One time purchase. Price $<span id="one-time-price"></span></label>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <input type="radio" name="price-option">
+                        <label>Subscribe now, and save 25% on this order.</label>
+                    </div>
+                </div>
+
+                <!-- Add to Basket Button -->
+                <button id="add-to-basket"
+                    class="bg-black text-white w-11/12 py-3 mt-4 hover:bg-white hover:text-black hover:border-2">
+                    ADD TO BASKET
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--* Also Like Section -->
+    <section>
+        <header class="flex justify-center items-center text-6xl font-medium py-20 border-t-0" data-aos="zoom-out">
+            You may also like…
+        </header>
+        <div class="flex">
+            <span class="border-r text-center pb-5 cursor-pointer">
+                <img src="../../assets/img/our_items/freshers/item1.webp" alt="also like">
+                <p class="font-medium">Cedar & Lavender</p>
+                <span class="text-[#808080] text-sm">price 56$</span>
+            </span>
+            <span class="border-r text-center pb-5 cursor-pointer">
+                <img src="../../assets/img/our_items/freshers/item2.webp" alt="also like">
+                <p class="font-medium">Cedar & Lavender</p>
+                <span class="text-[#808080] text-sm">price 56$</span>
+            </span>
+            <span class="border-r text-center pb-5 cursor-pointer">
+                <img src="../../assets/img/our_items/freshers/item3.webp" alt="also like">
+                <p class="font-medium">Cedar & Lavender</p>
+                <span class="text-[#808080] text-sm">price 56$</span>
+            </span>
+            <span class="text-center pb-5 cursor-pointer">
+                <img src="../../assets/img/our_items/freshers/item4.webp" alt="also like">
+                <p class="font-medium">Cedar & Lavender</p>
+                <span class="text-[#808080] text-sm">price 56$</span>
+            </span>
+        </div>
+    </section>
 
     <!--* Footer -->
     <footer class="flex border-b border-t">
@@ -118,39 +194,8 @@
             </ul>
         </section>
     </footer>
-    <script>
-        fetch('../../data/itemData.json')
-            .then(response => response.json())
-            .then(data => {
-                const freshFlowers = data.categories.find(category => category.category === 'Fresh Flowers').items;
 
-                const flowerListDiv = document.getElementById('fresh-flowers-list');
-
-                freshFlowers.forEach((flower, index) => {
-                    const flowerCard = document.createElement('span');
-                    flowerCard.className = `relative text-center item_card zoom-container ${index % 2 === 0 ? 'border-r' : ''} border-b opacity-0 transition-opacity duration-500`;
-
-                    setTimeout(() => {
-                        flowerCard.style.opacity = 1;
-                    }, index * 150);
-
-                    flowerCard.innerHTML = `
-                    <a href="../each_item/flower-detail.html?id=${flower.id}" class='flex text-center justify-center h-full'>
-                        <img src="../../assets/img/our_items/fresh_flower/${flower.image}" 
-                            class="object-cover object-center transform transition duration-500 zoom-image" 
-                            alt="${flower.title}">
-                        <span class="absolute bottom-5 transition duration-500 hover:translate-y-1">
-                            <p class="font-medium p-1">${flower.title}</p>
-                            <p class="text-[#808080] font-medium text-sm">price $${flower.price}</p>
-                        </span>
-                    </a>
-                `;
-                    flowerListDiv.appendChild(flowerCard);
-                });
-            });
-    </script>
-    <script src="../../scripts/fresh_details.js"></script>
-
+    <script src="../../scripts/live-detail.js"></script>
 </body>
 
 </html>

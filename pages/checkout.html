@@ -21,66 +21,70 @@
             </ul>
             <ul class="flex">
                 <li class="px-6 py-8 w-[180px]"><a href="../pages/sign.html">Sign in</a></li>
-                <li class="px-6 py-8 w-[180px] border-r-0"><a href="../pages/checkout.html">Cart</a></li>
+                <li class="px-6 py-8 w-[191px] border-r-0">
+                    <a href="" class="relative">Cart <span id="cart-count"></span></a>
+                </li>
             </ul>
         </span>
     </header>
     <!-- main-div -->
     <div class="main-div">
         <!-- left-div -->
-    <div class="left-div">
-        <div class="steps">
-            <span class="default-font">INFORMATION  <img class="img-arw" src="../assets/img/icons/right arrow.svg" alt="arrow-right"></span>
-            <span class="hide">SHIPPING <img class="img-arw" src="../assets/img/icons/right arrow.svg" alt="arrow-right"></span>
-        </div>
-        <div class="clr-div"></div>
-        <div id="hav-acc">Already have an account?<a id="a-login" href="">Log in</a> for faster checkout</div>
-        <!-- form -->
-        <form action="" method="post">
-            <h3 class="default-font">1 Contact information</h3>
-            <input class="inp" type="text" placeholder="Your Name">
-            <input class="inp" type="email" placeholder="Your Email">
-            <input class="inp" type="text" placeholder="Your phone number*">
-            <input class="inp" type="text" placeholder="Recipients Name">
-            <input class="inp" type="text" placeholder="Recipients Phone number *">
-            <input class="inp" type="date" placeholder="Data of Delivery ">
-            <input class="inp" type="time" placeholder="Delivery Time">
-            <input class="half-inp1" type="text" placeholder="Street">
-            <input class="half-inp2" type="text" placeholder="Apartment Number">
-            <input class="chkbox" type="checkbox" name="" id="">
-            <span class="add-chk">I don't know the address, please call the recipient.</span>
-            <button type="submit" class="btn">Place Order</button>
-        </form>
-    </div>
-    <!-- right-div -->
-    <div class="right-div">
-        <h1 class="order-sum">Order summary</h1>
-        <div class="img-w-details">
-            <img class="flower-img" src="../assets/img/our_items/fresh_flower/item6.jpeg" alt="flower6">
-            <div class="img-details">
-            <span class="descrip-img-onleft">
-                <span class="des-left-top">Snowfall</span>
-                <div class="clr-div"></div>
-                <span class="des-left-bottom">Quantity (1)</span>
-            </span>
-            <span class="descrip-img-onright">$100</span>
+        <div class="left-div">
+            <div class="steps">
+                <span class="default-font">INFORMATION <img class="img-arw" src="../assets/img/icons/right arrow.svg"
+                        alt="arrow-right"></span>
+                <span class="hide">SHIPPING <img class="img-arw" src="../assets/img/icons/right arrow.svg"
+                        alt="arrow-right"></span>
             </div>
             <div class="clr-div"></div>
+            <div id="hav-acc">Already have an account?<a id="a-login" href="">Log in</a> for faster checkout</div>
+            <!-- form -->
+            <form action="" method="post">
+                <h3 class="default-font">1 Contact information</h3>
+                <input class="inp" type="text" placeholder="Your Name">
+                <input class="inp" type="email" placeholder="Your Email">
+                <input class="inp" type="text" placeholder="Your phone number*">
+                <input class="inp" type="text" placeholder="Recipients Name">
+                <input class="inp" type="text" placeholder="Recipients Phone number *">
+                <input class="inp" type="date" placeholder="Data of Delivery ">
+                <input class="inp" type="time" placeholder="Delivery Time">
+                <input class="half-inp1" type="text" placeholder="Street">
+                <input class="half-inp2" type="text" placeholder="Apartment Number">
+                <input class="chkbox" type="checkbox" name="" id="">
+                <span class="add-chk">I don't know the address, please call the recipient.</span>
+                <button type="submit" class="btn">Place Order</button>
+            </form>
         </div>
-        <div class="gift-code">
-        <p class="gift-code-des">If you have our gift card, enter the code to get discounts</p>
-        <form action="">
-            <input class="inp-gift" type="text" placeholder="Gift card">
-            <button class="btn-gift" type="submit">APPLY</button>
-        </form>
-        </div>
-        <div class="buy-des">
-            <span class="buy-des-left">Subtotal</span>
-            <span class="buy-des-right">$100.00</span>
-            <div class="clr-div"></div>
-            <span class="buy-des-left">Shipping</span>
-            <span class="buy-des-right">Calculated at next step</span>
-            <div class="clr-div"></div>
+        <!-- right-div -->
+        <div class="right-div">
+            <h1 class="order-sum">Order summary</h1>
+            <div class="img-w-details">
+                <img class="flower-img" src="../assets/img/our_items/fresh_flower/item6.jpeg" alt="flower6">
+                <div class="img-details">
+                    <span class="descrip-img-onleft">
+                        <span class="des-left-top">Snowfall</span>
+                        <div class="clr-div"></div>
+                        <span class="des-left-bottom">Quantity (1)</span>
+                    </span>
+                    <span class="descrip-img-onright">$100</span>
+                </div>
+                <div class="clr-div"></div>
+            </div>
+            <div class="gift-code">
+                <p class="gift-code-des">If you have our gift card, enter the code to get discounts</p>
+                <form action="">
+                    <input class="inp-gift" type="text" placeholder="Gift card">
+                    <button class="btn-gift" type="submit">APPLY</button>
+                </form>
+            </div>
+            <div class="buy-des">
+                <span class="buy-des-left">Subtotal</span>
+                <span class="buy-des-right">$100.00</span>
+                <div class="clr-div"></div>
+                <span class="buy-des-left">Shipping</span>
+                <span class="buy-des-right">Calculated at next step</span>
+                <div class="clr-div"></div>
             </div>
             <div class="total-price">
                 <span class="total-price-l">Total</span>
@@ -92,7 +96,7 @@
             </div>
         </div>
     </div>
-    </div>  
+    </div>
     <div class="clr-div"></div>
     <!--* Footer -->
     <footer class="flex border-b">
@@ -170,6 +174,7 @@
             </ul>
         </section>
     </footer>
+    <script src="../scripts/fresh_details.js"></script>
 </body>
 
 </html>

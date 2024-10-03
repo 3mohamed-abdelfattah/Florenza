@@ -18,11 +18,13 @@
         <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
             <ul class="flex border-l-0">
                 <li class="px-6 py-8 w-[180px] border-l-0"><a href="../index.html">Home</a></li>
-                <li class="px-6 py-8 w-[180px]"><a href="../pages/about.html">About</a></li>
+                <li class="px-6 py-8 w-[180px]"><a href="./about.html">About</a></li>
             </ul>
             <ul class="flex">
-                <li class="px-6 py-8 w-[180px]"><a href="./pages/sign.html">Sign in</a></li>
-                <li class="px-6 py-8 w-[180px] border-r-0"><a href="./pages/checkout.html">Cart</a></li>
+                <li class="px-6 py-8 w-[179px]"><a href="./sign.html">Sign in</a></li>
+                <li class="px-6 py-8 w-[180px] border-r-0">
+                    <a href="./checkout.html" class="relative">Cart <span id="cart-count"></span></a>
+                </li>
             </ul>
         </span>
     </header>
@@ -48,7 +50,7 @@
                 <a href="./catogry_pages/fresh_flowers.html" class="flex static">
                     <span class="p-6 border-l h-[360px] w-[360px] flex flex-col justify-center items-center text-center"
                         data-aos="fade-right">
-                        <p class="text-[38px]" data-aos="zoom-in">Fresh Flowers</p>
+                        <p class="text-[38px] hover:text-4xl hover:underline" data-aos="zoom-in">Fresh Flowers</p>
                         <button class="flex absolute bottom-6 gap-1 hover:scale-110">
                             Shop now
                             <img src="../assets/img/icons/arrow-right.svg" alt="right arrow"
@@ -68,7 +70,7 @@
                     </div>
                     <span class="p-6 h-[360px] w-[360px] flex flex-col justify-center items-center text-center"
                         data-aos="fade-left">
-                        <p class="text-[38px]" data-aos="zoom-in">Dried Flowers</p>
+                        <p class="text-[38px] hover:text-4xl hover:underline" data-aos="zoom-in">Dried Flowers</p>
                         <button class="flex absolute bottom-6 gap-1 hover:scale-110">
                             <img src="../assets/img/icons/arrow-left.svg" alt="right arrow"
                                 class="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300">
@@ -82,7 +84,7 @@
                 <a href="./catogry_pages/live_plants.html" class="flex static">
                     <span data-aos="fade-right"
                         class="p-6 border-l h-[360px] w-[360px] flex flex-col justify-center items-center text-center">
-                        <p class="text-[38px]" data-aos="zoom-in">Live Plants</p>
+                        <p class="text-[38px] hover:text-4xl hover:underline" data-aos="zoom-in">Live Plants</p>
                         <button class="flex absolute bottom-6 gap-1 hover:scale-110">
                             Shop now
                             <img src="../assets/img/icons/arrow-right.svg" alt="right arrow"
@@ -102,7 +104,7 @@
                     </div>
                     <span class="p-6 h-[360px] w-[360px] flex flex-col justify-center items-center text-center"
                         data-aos="fade-left">
-                        <p class="text-[38px]" data-aos="zoom-in">Aroma Candels</p>
+                        <p class="text-[38px] hover:text-4xl hover:underline" data-aos="zoom-in">Aroma Candels</p>
                         <button class="flex absolute bottom-6 gap-1 hover:scale-110">
                             <img src="../assets/img/icons/arrow-left.svg" alt="right arrow"
                                 class="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300">
@@ -116,7 +118,7 @@
                 <a href="./catogry_pages/fresheners.html" class="flex static">
                     <span data-aos="fade-right"
                         class="p-6 border-l h-[360px] w-[360px] flex flex-col justify-center items-center text-center">
-                        <p class="text-[38px]" data-aos="zoom-in">Fresheners</p>
+                        <p class="text-[38px] hover:text-4xl hover:underline" data-aos="zoom-in">Fresheners</p>
                         <button class="flex absolute bottom-6 gap-1 hover:scale-110">
                             Shop now
                             <img src="../assets/img/icons/arrow-right.svg" alt="right arrow"
@@ -216,6 +218,7 @@
             });
         });
     </script>
+    <script src="../scripts/fresh_details.js"></script>
 </body>
 
 </html>
