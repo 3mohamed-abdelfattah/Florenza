@@ -179,7 +179,7 @@ function updateCartCount() {
     const basket = JSON.parse(localStorage.getItem('basket')) || [];
     const totalQuantity = basket.reduce((sum, item) => sum + item.quantity, 0);
     const cartCountElement = document.querySelector('#cart-count');
-    cartCountElement.textContent = totalQuantity > 0 ? `${totalQuantity}` : 'Cart';
+    cartCountElement.textContent = totalQuantity > 0 ? `${totalQuantity}` : '';
 }
 
 document.addEventListener('DOMContentLoaded', updateCartCount);

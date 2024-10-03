@@ -8,6 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="../styles/global.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/pages_style/checkout.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>Florenza</title>
 </head>
 
@@ -22,11 +24,12 @@
             <ul class="flex">
                 <li class="px-6 py-8 w-[180px]"><a href="../pages/sign.html">Sign in</a></li>
                 <li class="px-6 py-8 w-[191px] border-r-0">
-                    <a href="" class="relative">Cart <span id="cart-count"></span></a>
+                    <a href="" class="relative">Cart</a>
                 </li>
             </ul>
         </span>
     </header>
+
     <!-- main-div -->
     <div class="main-div">
         <!-- left-div -->
@@ -36,9 +39,9 @@
                         alt="arrow-right"></span>
                 <span class="hide">SHIPPING <img class="img-arw" src="../assets/img/icons/right arrow.svg"
                         alt="arrow-right"></span>
+                <span class="hide">Payment <img class="img-arw"></span>
             </div>
             <div class="clr-div"></div>
-            <div id="hav-acc">Already have an account?<a id="a-login" href="">Log in</a> for faster checkout</div>
             <!-- form -->
             <form action="" method="post">
                 <h3 class="default-font">1 Contact information</h3>
@@ -51,24 +54,13 @@
                 <input class="inp" type="time" placeholder="Delivery Time">
                 <input class="half-inp1" type="text" placeholder="Street">
                 <input class="half-inp2" type="text" placeholder="Apartment Number">
-                <input class="chkbox" type="checkbox" name="" id="">
-                <span class="add-chk">I don't know the address, please call the recipient.</span>
                 <button type="submit" class="btn">Place Order</button>
             </form>
         </div>
         <!-- right-div -->
         <div class="right-div">
             <h1 class="order-sum">Order summary</h1>
-            <div class="img-w-details">
-                <img class="flower-img" src="../assets/img/our_items/fresh_flower/item6.jpeg" alt="flower6">
-                <div class="img-details">
-                    <span class="descrip-img-onleft">
-                        <span class="des-left-top">Snowfall</span>
-                        <div class="clr-div"></div>
-                        <span class="des-left-bottom">Quantity (1)</span>
-                    </span>
-                    <span class="descrip-img-onright">$100</span>
-                </div>
+            <div class="img-w-details" id="items-container">
                 <div class="clr-div"></div>
             </div>
             <div class="gift-code">
@@ -83,7 +75,10 @@
                 <span class="buy-des-right">$100.00</span>
                 <div class="clr-div"></div>
                 <span class="buy-des-left">Shipping</span>
-                <span class="buy-des-right">Calculated at next step</span>
+                <span class="buy-des-right">$25.00</span>
+                <div class="clr-div"></div>
+                <span class="buy-des-left">Tax</span>
+                <span class="buy-des-right">$5.00</span>
                 <div class="clr-div"></div>
             </div>
             <div class="total-price">
@@ -96,8 +91,9 @@
             </div>
         </div>
     </div>
-    </div>
+
     <div class="clr-div"></div>
+
     <!--* Footer -->
     <footer class="flex border-b">
         <!-- first col -->
@@ -130,11 +126,11 @@
                 <p class="text-[#808080] font-medium text-xl">Follow Us</p>
                 <span>
                     <span class="flex gap-8 justify-center items-center w-full">
-                        <a href=""> <img src="../assets/img/icons/Instagram.svg" alt="social icon"> </a>
-                        <a href=""> <img src="../assets/img/icons/Pinterest.svg" alt="social icon"> </a>
-                        <a href=""> <img src="../assets/img/icons/Facebook.svg" alt="social icon"> </a>
-                        <a href=""> <img src="../assets/img/icons/Twitter.svg" alt="social icon"> </a>
-                        <a href=""> <img src="../assets/img/icons/Telegram.svg" alt="social icon"> </a>
+                        <a href=""><img src="../assets/img/icons/Instagram.svg" alt="social icon"></a>
+                        <a href=""><img src="../assets/img/icons/Pinterest.svg" alt="social icon"></a>
+                        <a href=""><img src="../assets/img/icons/Facebook.svg" alt="social icon"></a>
+                        <a href=""><img src="../assets/img/icons/Twitter.svg" alt="social icon"></a>
+                        <a href=""><img src="../assets/img/icons/Telegram.svg" alt="social icon"></a>
                     </span>
                 </span>
             </div>
@@ -144,21 +140,22 @@
             <span>
                 <p class="text-[#808080] font-medium text-xl mb-6">Shop</p>
                 <ul class="flex flex-col gap-2 text-[#121212] font-medium">
-                    <li><a href=""> All Products </a></li>
-                    <li><a href=""> Fresh Flowers </a></li>
-                    <li><a href=""> Dried Flowers </a></li>
-                    <li><a href=""> Live Plants </a></li>
-                    <li><a href=""> Designer Vases </a></li>
-                    <li><a href=""> Aroma Candles </a></li>
-                    <li><a href=""> Freshener Diffuser </a></li>
+                    <li><a href="">All Products</a></li>
+                    <li><a href="">Fresh Flowers</a></li>
+                    <li><a href="">Dried Flowers</a></li>
+                    <li><a href="">Live Plants</a></li>
+                    <li><a href="">Designer Vases</a></li>
+                    <li><a href="">Aroma Candles</a></li>
+                    <li><a href="">Freshener Diffuser</a></li>
                 </ul>
             </span>
             <span>
                 <p class="text-[#808080] font-medium text-xl mb-6">Service</p>
                 <ul class="flex flex-col gap-2 text-[#121212] font-medium">
-                    <li> <a href=""> Flower Subcription </a>
-                    </li>
-                    <li><a href=""> Wedding & Event Decor </a></li>
+                    <li><a href="">Flower Subscription</a></li>
+                    <li><a href="">Wedding & Event Decor</a></li>
+                    <li><a href="">Home & Office Decor</a></li>
+                    <li><a href="">Personalized Gifts</a></li>
                 </ul>
             </span>
         </section>
@@ -174,7 +171,7 @@
             </ul>
         </section>
     </footer>
-    <script src="../scripts/fresh_details.js"></script>
+    <script src="../scripts/checkout.js"> </script>
 </body>
 
 </html>

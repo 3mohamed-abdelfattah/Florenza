@@ -1,198 +1,144 @@
-.left-div{
-    float: left;
+.left-div {
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
+    border-right: 1px solid black;
 }
-.right-div{
+
+.right-div {
     width: 50%;
     background-color: #F5F5F7;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding: 40px 40px 0px 40px;
     text-align: left;
     position: sticky;
 }
-.clr-div{
+
+.clr-div {
     clear: both;
 }
-.main-div{
-    margin-top: 83px;
-    position: sticky;
+
+.main-div {
+    margin-top: 85px;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 85px;
 }
-footer{
-    border-top-color: black;
-    border-top-style: solid;
-    border-top-width: 1px;
+
+footer {
+    border-top: 1px solid black;
 }
-.default-font{
-    font-family: Roboto;
+
+.default-font {
     font-weight: 500;
     size: 14px;
     line-height: 16.8px;
 }
-.img-arw{
+
+.img-arw {
     display: inline-block;
 }
-#hav-acc{
-    background-color: #D2D2D7;
-    padding: 40px;
-    line-height: 22.4px;
-    font-weight: 400;
-    text-align: left;
-    margin-bottom: 24px;
-}
-#a-login{
-    text-decoration:underline ;
-}
-input{
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.658) !important;
     opacity: 0.5;
-    display: block;
     width: 100%;
     height: 56px;
     margin-bottom: 12px;
 }
-h3{
+
+h3 {
     font-size: 18px;
     line-height: 25.2px;
     text-align: left;
 }
-.hide{
-    font-family: Roboto;
+
+.hide {
     font-weight: 500;
     size: 14px;
     line-height: 16.8px;
     opacity: 50%;
 }
-.btn{
+
+.btn {
     background-color: black;
     color: white;
     width: 100%;
     height: 56px;
     margin-top: 16px;
 }
-.inp{
-    margin-top: 16px;
-    padding-left: 16px;
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid;
 }
-.steps{
+
+.inp {
+    margin-top: 16px;
+    padding: 16px;
+}
+
+.steps {
     text-align: left;
     margin-bottom: 40px;
 }
-.half-inp1{
+
+.half-inp1 {
     margin-top: 16px;
     width: 50%;
     float: left;
     margin-right: 1%;
     padding-left: 16px;
 }
-.half-inp2{
+
+.half-inp2 {
     margin-top: 16px;
     width: 49%;
     padding-left: 16px;
 }
-.chkbox{
-    margin-top: 12px;
-    background-color: #D2D2D7;
-    width: 24px;
-    height: 24px;
-    float: left;
-}
-.add-chk{
-    font-family: Roboto;
+
+.order-sum {
+    text-transform: uppercase;
     font-weight: 500;
     size: 14px;
     line-height: 16.8px;
-    margin-top: 12px;
-    float: left;
-    margin-left: 12px;
+    padding-bottom: 10px;
 }
-.order-sum{
-    font-family: Roboto;
-    font-weight: 500;
-    size: 14px;
-    line-height: 16.8px;
-    padding-bottom: 40px;
-}
-.flower-img{
-    width: 160px;
-    height: 160px;
-    float: left;
-    margin-right: 16px;
-}
-.des-left-top{
-    font-family: Roboto;
-    font-weight: 500;
-    size: 18px;
-    line-height: 25.2px;
-    float: left;
-}
-.des-left-bottom{
-    font-family: Roboto;
+
+.gift-code {
     font-weight: 400;
     size: 16px;
     line-height: 22.4px;
-    float: left;
+    padding: 24px 0;
+    border-bottom: 1px solid #eee;
 }
-.descrip-img-onright{
-    font-family: Roboto;
-    font-weight: 400;
-    size: 18px;
-    line-height: 25.4px;
-    float: right;
-    padding-top: 10px;
-}
-.descrip-img-onleft{
-    float: left;
-    width: 15%;
-}
-.img-w-details{
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color:rgba(146, 138, 138, 0.5);
-    padding-bottom: 24px;
-}
-.img-details{
-    text-align: center;
-    padding-top: 35.5px;
-}
-.gift-code{
-    font-family: Roboto;
-    font-weight: 400;
-    size: 16px;
-    line-height: 22.4px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color:rgba(146, 138, 138, 0.5);
-}
-.inp-gift{
+
+.inp-gift {
     width: 49%;
     float: left;
     margin-right: 2%;
     padding-left: 16px;
 }
-.btn-gift{
+
+.btn-gift {
     background-color: black;
     color: white;
     height: 56px;
     width: 49%;
 }
-.gift-code-des{
+
+.btn-gift:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+.gift-code-des {
     margin-bottom: 16px;
 }
-.buy-des{
+
+.buy-des {
     font-family: Roboto;
     font-weight: 400;
     size: 16px;
@@ -200,40 +146,47 @@ h3{
     padding-top: 24px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color:rgba(146, 138, 138, 0.5);
+    border-bottom-color: rgba(146, 138, 138, 0.5);
 }
-.buy-des-left{
+
+.buy-des-left {
     float: left;
     padding-bottom: 24px;
 }
-.buy-des-right{
+
+.buy-des-right {
     float: right;
     padding-bottom: 24px;
 }
-.total-price{
+
+.total-price {
     margin-top: 24px;
 }
-.total-price-l{
-    float:left;
-    font-family: Roboto;
+
+.total-price-l {
+    float: left;
     font-weight: 500;
     size: 18px;
     line-height: 25.2px;
 }
-.total-price-r{
+
+.total-price-r {
     float: right;
-    font-family: Roboto;
     font-weight: 400;
     size: 21px;
     line-height: 22.4px;
 }
-.foot-left{
-    text-align:center;
-    font-family: Roboto;
+
+.foot-left {
+    text-align: center;
     font-weight: 400;
     size: 14px;
     line-height: 16.8px;
     position: absolute;
     bottom: 40px;
-    left:43%;
+    left: 43%;
+}
+
+.hr_line {
+    border-bottom: 1px solid lightgray !important;
 }
