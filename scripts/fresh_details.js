@@ -47,7 +47,7 @@ fetch('../../data/itemData.json')
                 combinationsContainer.appendChild(div);
             });
 
-            // infinite scroll effect
+            // Infinite scroll effect
             function duplicateItems() {
                 const items = document.querySelectorAll('.combination-item');
                 items.forEach(item => {
@@ -118,6 +118,8 @@ fetch('../../data/itemData.json')
 
                     // Show toast notification
                     showToast(`${title} added to basket.`);
+
+                    updateCartCount();
                 }
             });
 
@@ -126,7 +128,7 @@ fetch('../../data/itemData.json')
                 const price = parseFloat(document.getElementById('flower-price').innerText.replace('$', ''));
                 const image = document.querySelector('#flower-image img').getAttribute('src');
 
-                // Save data in localStorage
+                // Save in localStorage
                 const flowerData = {
                     title: title,
                     price: price,
@@ -134,10 +136,10 @@ fetch('../../data/itemData.json')
                     quantity: parseInt(document.getElementById('quantity').innerText)
                 };
 
-                // Create LocalStorage if it doesn't exist
+                // Create LocalStorage
                 const basket = JSON.parse(localStorage.getItem('basket')) || [];
 
-                // Check if the flower already exists in the basket
+                // Check if already exists in the basket
                 const existingFlower = basket.find(item => item.title === title);
                 if (existingFlower) {
                     existingFlower.quantity += flowerData.quantity;
@@ -150,6 +152,8 @@ fetch('../../data/itemData.json')
 
                 // Show toast notification
                 showToast(`${title} added to basket.`);
+
+                updateCartCount();
             });
 
             // Quantity controls
@@ -169,3 +173,13 @@ fetch('../../data/itemData.json')
             });
         }
     });
+
+// Update cart counter
+function updateCartCount() {
+    const basket = JSON.parse(localStorage.getItem('basket')) || [];
+    const totalQuantity = basket.reduce((sum, item) => sum + item.quantity, 0);
+    const cartCountElement = document.querySelector('#cart-count');
+    cartCountElement.textContent = totalQuantity > 0 ? `${totalQuantity}` : 'Cart';
+}
+
+document.addEventListener('DOMContentLoaded', updateCartCount);

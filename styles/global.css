@@ -114,3 +114,15 @@ footer>section>span>button:hover {
     animation: text-appear 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     animation-delay: 0.3s;
 }
+
+/* Cart Counter */
+#cart-count {
+    position: absolute;
+    left: 35px;
+    background-color: #000000be;
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 5px;
+}

@@ -44,5 +44,5 @@
         }
 
         .quantity_button {
-            border: 1px solid lightgray !important;
+            border-color: lightgray !important;
         }

@@ -24,7 +24,9 @@
             </ul>
             <ul class="flex">
                 <li class="px-6 py-8 w-[191px]"><a href="../sign.html">Sign in</a></li>
-                <li class="px-6 py-8 w-[191px] border-r-0"><a href="../checkout.html">Cart</a></li>
+                <li class="px-6 py-8 w-[191px] border-r-0">
+                    <a href="../checkout.html" class="relative">Cart <span id="cart-count"></span></a>
+                </li>
             </ul>
         </span>
     </header>
@@ -47,10 +49,12 @@
                 <!-- Quantity Selector -->
                 <div class="flex items-center space-x-2">
                     <p>Quantity</p>
-                    <div class="flex items-center rounded w-24 quantity_button">
-                        <button id="decrease" class="px-2 text-2xl font-medium hover:text-red-600">-</button>
+                    <div class="flex items-center rounded w-fit border quantity_button">
+                        <button id="decrease"
+                            class="px-2 text-xl hover:text-red-600 border-r quantity_button">-</button>
                         <span id="quantity" class="px-4">1</span>
-                        <button id="increase" class="px-2 text-2lx font-medium hover:text-green-600">+</button>
+                        <button id="increase"
+                            class="px-2 text-xl hover:text-green-600 border-l quantity_button">+</button>
                     </div>
                 </div>
 

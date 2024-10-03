@@ -21,8 +21,10 @@
                 <li class="px-6 py-8 w-[180px]"><a href="#contact">Contact</a></li>
             </ul>
             <ul class="flex">
-                <li class="px-6 py-8 w-[180px]"><a href="./pages/sign.html">Sign in</a></li>
-                <li class="px-6 py-8 w-[179px] border-r-0"><a href="./pages/checkout.html">Cart</a></li>
+                <li class="px-6 py-8 w-[179px]"><a href="./pages/sign.html">Sign in</a></li>
+                <li class="px-6 py-8 w-[180px] border-r-0">
+                    <a href="./pages/checkout.html" class="relative">Cart <span id="cart-count"></span></a>
+                </li>
             </ul>
         </span>
     </header>
@@ -472,6 +474,7 @@
             });
         });
     </script>
+    <script src="./scripts/fresh_details.js"></script>
 </body>
 
 </html>
