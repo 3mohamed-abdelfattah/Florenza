@@ -8,6 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./../styles/global.css">
     <link href="./../styles/pages_style/sign.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <title>Florenza</title>
 </head>
 
@@ -23,18 +25,18 @@
                     Service.
                 </p>
             </div>
-            <form action="../index.html" method="post">
-                <label>UserName</label>
+            <form id="login-form" action="../index.html" method="post">
+                <label for="username">UserName</label>
                 <span id="labuser"></span>
-                <input type="text" placeholder="Florenza" class="pl-1">
+                <input type="text" id="username" placeholder="Florenza" class="pl-1">
                 <hr>
                 <br>
-                <label>Password</label>
+                <label for="password">Password</label>
                 <span id="labpass"></span>
-                <input id="passuser" type="password" placeholder="********" class="pl-1">
+                <input id="password" type="password" placeholder="********" class="pl-1">
                 <hr>
                 <br>
-                <button type="submit" id="btn">Sign in </button>
+                <button type="submit" id="btn">Sign in</button>
             </form>
             <div>
                 <h6 id="forgetPass">Forget your password?</h6>

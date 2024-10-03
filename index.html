@@ -373,15 +373,18 @@
             <p class="text-[#121212]/80 uppercase mb-6" data-aos="zoom-in">Reviews</p>
             <p class="text-[#121212] font-medium text-5xl mb-10" data-aos="zoom-in">Our Clients say</p>
             <span class="flex items-center justify-center">
-                <img class="pointerCursor" id="Left-arrow-review" src="./assets/img/icons/left arrow.svg" alt="Left arrow">
+                <img class="pointerCursor" id="Left-arrow-review" src="./assets/img/icons/left arrow.svg"
+                    alt="Left arrow">
                 <p id="commentText" class="text-[#121212]/80 text-3xl mb-4 italic" data-aos="zoom-in">
                     “Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly recommend
                     this
                     flower shop!”
                 </p>
-                <img class="pointerCursor" id="Right-arrow-review" src="./assets/img/icons/right arrow.svg" alt="Right arrow">
+                <img class="pointerCursor" id="Right-arrow-review" src="./assets/img/icons/right arrow.svg"
+                    alt="Right arrow">
             </span>
-            <p id="commentName" class="text-[#121212]/95 font-medium uppercase mb-8" data-aos="zoom-in">– Ronald Richards</p>
+            <p id="commentName" class="text-[#121212]/95 font-medium uppercase mb-8" data-aos="zoom-in">– Ronald
+                Richards</p>
             <!-- <img src="./assets/img/icons/Slide Nav.png" alt="nav slide" class="mb-16" data-aos="zoom-in"> -->
             <button class="px-8 py-4 uppercase border text-[#121212] font-medium hover:bg-black hover:text-white"
                 data-aos="zoom-in">
@@ -466,6 +469,15 @@
             </ul>
         </section>
     </footer>
+
+    <!--! Protected Routes -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (!localStorage.getItem('isLoggedIn')) {
+                window.location.href = 'pages/sign.html';
+            }
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
