@@ -251,12 +251,13 @@
         <section class="flex flex-col justify-center items-cente w-full">
             <aside class="w-full p-20">
                 <p class="text-6xl font-medium text-[#121212] mb-7" data-aos="zoom-in-right">To Contact Us</p>
-                <p class="text-[#121212]/70 mb-4" data-aos="zoom-in-right">We will call you back</p>
+                <p id="invalidMessage" class="text-[#121212]/70 mb-4" data-aos="zoom-in-right">We will call you back</p>
                 <!-- call back -->
                 <span class="flex gap-4">
-                    <input class="border p-4 w-full" type="text" placeholder="+380 XX XXX XX XX"
+                    <input id="valid-number" class="border p-4 w-full" type="text" placeholder="+380 XX XXX XX XX"
                         data-aos="zoom-in-right">
                     <button
+                        id="btnvalid-number"
                         class="w-full bg-black text-white px-6 py-3 uppercase hover:bg-white hover:text-black hover:border-2"
                         data-aos="zoom-in-right">book a
                         call</button>

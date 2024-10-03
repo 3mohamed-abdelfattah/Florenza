@@ -190,3 +190,6 @@ h3 {
 .hr_line {
     border-bottom: 1px solid lightgray !important;
 }
+.border-red{
+    border: 1px solid red !important;
+}
