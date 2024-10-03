@@ -18,6 +18,7 @@ function displayOrderItems() {
 
             itemDiv.innerHTML = `
             <span class='flex p-2 hr_line'>
+            <button onclick="removeItem(${index})" class="mr-2"><img src='../assets/img/icons/delete-svgrepo-com.svg' class='w-5'></button>
                 <img class='w-20 border' src="${item.image}" alt="${item.title}" class="order-item-image">
                 <div class="flex justify-between w-full">
                     <span class='flex flex-col items-left gap-1 p-2'>
@@ -27,7 +28,6 @@ function displayOrderItems() {
                     </span>
                     <span class="flex font-semibold items-center">$${Math.round(itemTotal)}</span>
                 </div>
-                <button onclick="removeItem(${index})" class="text-red-500 ml-2">Remove</button>
             </span>
             `;
 
