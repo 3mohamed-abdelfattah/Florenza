@@ -7,12 +7,12 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .main-div {
     background-color: white;
     border: 1px solid black;
-    margin-top: 5%;
     height: fit-content;
 }
 
