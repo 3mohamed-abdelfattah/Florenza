@@ -28,3 +28,6 @@
 .img-container img:hover {
     transform: scale(1.2);
 }
+.pointerCursor:hover {
+    cursor: pointer;
+}
