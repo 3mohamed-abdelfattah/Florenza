@@ -14,12 +14,13 @@
 
 <body>
     <!--* Header -->
-    <header class="fixed top-0 w-full z-50 bg-white">
+    <header class="fixed top-0 w-full z-50 bg-white hidden sm:block">
         <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
             <ul class="flex border-l-0">
                 <li class="px-6 py-8 md:w-[180px] border-l-0"><a href="./pages/category.html">Shop</a></li>
                 <li class="px-6 py-8 md:w-[180px]"><a href="./pages/about.html">About us</a></li>
             </ul>
+            <img class="block xl:hidden w-10" src="./assets/img/icon.png" alt="">
             <ul class="flex">
                 <li class="px-6 py-8 md:w-[179px]"><a href="./pages/subscription.html">Subscriptions</a></li>
                 <li class="px-6 py-8 md:w-[180px] border-r-0">
@@ -29,10 +30,26 @@
         </span>
     </header>
 
+    <!-- Header For Mobile -->
+    <header class="fixed top-0 w-full z-50 bg-white sm:hidden">
+        <div class="flex justify-between items-center px-4 py-3">
+            <img class="w-8" src="./assets/img/icon.png" alt="Logo">
+            <button id="burger-btn" class="text-3xl focus:outline-none">
+                &#9776;
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden flex flex-col items-center bg-white text-[#121212]">
+            <a href="./pages/category.html" class="py-2 border-b w-full text-center">Shop</a>
+            <a href="./pages/about.html" class="py-2 border-b w-full text-center">About us</a>
+            <a href="./pages/subscription.html" class="py-2 border-b w-full text-center">Subscriptions</a>
+            <a href="./pages/checkout.html" class="py-2 w-full text-center">Cart <span id="cart-count"></span></a>
+        </nav>
+    </header>
+
     <!--* Hero Section -->
-    <main class="flex flex-col lg:flex-row items-start mt-[85px]">
+    <main class="flex flex-col xl:flex-row items-start mt-14 sm:mt-[85px]">
         <!-- Left Colum Side -->
-        <section class="lg:sticky top-32 max-w-fit min-[1440px]:w-[720px] flex justify-center items-center">
+        <section class="xl:sticky top-32 max-w-fit min-[1440px]:w-[720px] flex justify-center items-center">
             <aside class="w-fit min-[1440px]:w-[560px] m-10 min-[1440px]:m-20">
                 <!-- Brand Name Section -->
                 <div class=" flex flex-col border-b gap-14">
@@ -66,7 +83,7 @@
 
         <!-- Right Colum Side -->
         <section
-            class="flex flex-wrap lg:flex-col w-full gap-5 lg:gap-0 justify-center lg:items-end border-t lg:border-t-0">
+            class="flex flex-wrap xl:flex-col w-full gap-5 lg:gap-0 justify-center lg:items-end border-t lg:border-t-0">
             <!-- Item 1 -->
             <article class="flex relative">
                 <a href="./pages/catogry_pages/fresh_flowers.html" class="flex flex-col xl:flex-row static">
@@ -165,7 +182,7 @@
     <main class="flex flex-col lg:flex-row items-start border-t justify-between">
         <!-- Left Colum Side -->
         <section class="lg:sticky top-8 flex justify-center items-center">
-            <aside class="w-[560px] m-5 lg:m-20 container_text" data-aos="zoom-in-right">
+            <aside class="md:w-[560px] m-5 lg:m-20 container_text" data-aos="zoom-in-right">
                 <p class="text text-5xl lg:text-6xl font-medium text-[#121212]">About us</p>
             </aside>
         </section>
@@ -198,7 +215,7 @@
     <main class="flex flex-col lg:flex-row items-start border-t justify-between">
         <!-- Left Colum Side -->
         <section class="lg:sticky top-32 flex justify-center items-center">
-            <aside class="w-[560px] m-5 lg:m-20">
+            <aside class="md:w-[560px] m-5 lg:m-20">
                 <p class=" text-5xl lg:text-6xl font-medium text-[#121212]" data-aos="zoom-in-right">Why choose us ?</p>
             </aside>
         </section>
@@ -407,7 +424,7 @@
     <!--* Footer -->
     <footer class="flex flex-wrap border-b">
         <!-- first col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
+        <section class="hidden sm:flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
             <p class="text-[#121212] leading-6">
                 Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas...
                 Reminds you 7 days before. No spam or sharing your address
@@ -418,7 +435,7 @@
             </span>
         </section>
         <!-- second col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+        <section class="flex flex-col p-2 sm:p-10 items-start gap-6 border-r flex-1">
             <p class="text-[#808080] font-medium text-xl">Contact Us</p>
             <div class="flex flex-col gap-6">
                 <span class="flex flex-col gap-2">
@@ -446,7 +463,7 @@
             </div>
         </section>
         <!-- third col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+        <section class="hidden sm:flex flex-col p-10 items-start gap-6 border-r flex-1">
             <span>
                 <p class="text-[#808080] font-medium text-xl mb-6">Shop</p>
                 <ul class="flex flex-col gap-2 text-[#121212] font-medium">
@@ -469,7 +486,7 @@
             </span>
         </section>
         <!-- fourth col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+        <section class="flex flex-col p-2 sm:p-10 items-start gap-6 border-r flex-1">
             <p class="text-[#808080] font-medium text-xl">About Us</p>
             <ul class="flex flex-col gap-2 text-[#121212] font-medium">
                 <li class="mb-1"> <a href=""> Our story </a></li>
@@ -503,6 +520,7 @@
     </script>
     <script src="./scripts/fresh_details.js"></script>
     <script src="scripts/comments_for_home.js"></script>
+    <script src="scripts/header.js"></script>
 </body>
 
 </html>

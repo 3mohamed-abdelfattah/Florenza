@@ -12,13 +12,15 @@
 </head>
 
 <body>
+
     <!--* Header -->
-    <header class="fixed top-0 w-full z-50 bg-white">
+    <header class="fixed top-0 w-full z-50 bg-white hidden sm:block">
         <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
             <ul class="flex border-l-0">
                 <li class="px-6 py-8 md:w-[190px]"><a href="../../index.html">Home</a></li>
                 <li class="px-6 py-8 md:w-[190px] border-l-0"><a href="../category.html">Shop</a></li>
             </ul>
+            <img class="block xl:hidden w-10" src="../../assets/img/icon.png" alt="logo">
             <ul class="flex">
                 <li class="px-6 py-8 md:w-[191px]"><a href="../subscription.html">Subscriptions</a></li>
                 <li class="px-6 py-8 md:w-[191px] border-r-0">
@@ -28,7 +30,23 @@
         </span>
     </header>
 
-    <main class="flex flex-col md:flex-row justify-center items-center mt-[85px]">
+    <!-- Header For Mobile -->
+    <header class="fixed top-0 w-full z-50 bg-white sm:hidden">
+        <div class="flex justify-between items-center px-4 py-3">
+            <img class="w-8" src="../../assets/img/icon.png" alt="logo">
+            <button id="burger-btn" class="text-3xl focus:outline-none">
+                &#9776;
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden flex flex-col items-center bg-white text-[#121212]">
+            <a href="../../index.html" class="py-2 border-b w-full text-center">Home</a>
+            <a href="../category.html" class="py-2 border-b w-full text-center">Shop</a>
+            <a href="../subscription.html" class="py-2 border-b w-full text-center">Subscriptions</a>
+            <a href="../checkout.html" class="py-2 w-full text-center">Cart <span id="cart-count"></span></a>
+        </nav>
+    </header>
+
+    <main class="flex flex-col md:flex-row justify-center items-center mt-14 sm:mt-[85px]">
         <!-- Left Section -->
         <section
             class="sticky bottom-0 w-full bg-[url('../../assets/img/our_items/candels/item.webp')] h-fit md:h-svh bg-cover bg-center">
@@ -47,7 +65,7 @@
     <!--* Footer -->
     <footer class="flex flex-wrap border-b">
         <!-- first col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
+        <section class="hidden sm:flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
             <p class="text-[#121212] leading-6">
                 Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas...
                 Reminds you 7 days before. No spam or sharing your address
@@ -58,7 +76,7 @@
             </span>
         </section>
         <!-- second col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+        <section class="flex flex-col p-2 sm:p-10 items-start gap-6 border-r flex-1">
             <p class="text-[#808080] font-medium text-xl">Contact Us</p>
             <div class="flex flex-col gap-6">
                 <span class="flex flex-col gap-2">
@@ -75,7 +93,7 @@
                 </span>
                 <p class="text-[#808080] font-medium text-xl">Follow Us</p>
                 <span>
-                    <span class="flex gap-8 justify-center items-center w-full">
+                    <span class="flex gap-2 lg:gap-8 justify-center items-center w-full">
                         <a href=""> <img src="../../assets/img/icons/Instagram.svg" alt="social icon"> </a>
                         <a href=""> <img src="../../assets/img/icons/Pinterest.svg" alt="social icon"> </a>
                         <a href=""> <img src="../../assets/img/icons/Facebook.svg" alt="social icon"> </a>
@@ -86,7 +104,7 @@
             </div>
         </section>
         <!-- third col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+        <section class="hidden sm:flex flex-col p-10 items-start gap-6 border-r flex-1">
             <span>
                 <p class="text-[#808080] font-medium text-xl mb-6">Shop</p>
                 <ul class="flex flex-col gap-2 text-[#121212] font-medium">
@@ -109,7 +127,7 @@
             </span>
         </section>
         <!-- fourth col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+        <section class="flex flex-col p-2 sm:p-10 items-start gap-6 border-r flex-1">
             <p class="text-[#808080] font-medium text-xl">About Us</p>
             <ul class="flex flex-col gap-2 text-[#121212] font-medium">
                 <li class="mb-1"> <a href=""> Our story </a></li>
@@ -153,6 +171,7 @@
             });
     </script>
     <script src="../../scripts/fresh_details.js"></script>
+    <script src="../../scripts/header.js"></script>
 
 </body>
 

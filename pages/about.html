@@ -15,19 +15,36 @@
 <body>
 
     <!--* Header -->
-    <header class="fixed top-0 w-full z-50 bg-white">
+    <header class="fixed top-0 w-full z-50 bg-white hidden sm:block">
         <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
             <ul class="flex border-l-0">
-                <li class="px-6 py-8 md:w-[180px] border-l-0"><a href="../pages/category.html">Shop</a></li>
                 <li class="px-6 py-8 md:w-[180px]"><a href="../index.html">Home</a></li>
+                <li class="px-6 py-8 md:w-[180px] border-l-0"><a href="./category.html">Shop</a></li>
             </ul>
+            <img class="block xl:hidden w-10" src="../assets/img/icon.png" alt="logo">
             <ul class="flex">
-                <li class="px-6 py-8 md:w-[180px]"><a href="../pages/subscription.html">Subscriptions</a></li>
+                <li class="px-6 py-8 md:w-[180px]"><a href="./subscription.html">Subscriptions</a></li>
                 <li class="px-6 py-8 md:w-[191px] border-r-0">
-                    <a href="../checkout.html" class="relative">Cart <span id="cart-count"></span></a>
+                    <a href="./checkout.html" class="relative">Cart <span id="cart-count"></span></a>
                 </li>
             </ul>
         </span>
+    </header>
+
+    <!-- Header For Mobile -->
+    <header class="fixed top-0 w-full z-50 bg-white sm:hidden">
+        <div class="flex justify-between items-center px-4 py-3">
+            <img class="w-8" src="../assets/img/icon.png" alt="logo">
+            <button id="burger-btn" class="text-3xl focus:outline-none">
+                &#9776;
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden flex flex-col items-center bg-white text-[#121212]">
+            <a href="../index.html" class="py-2 border-b w-full text-center">Home</a>
+            <a href="./category.html" class="py-2 border-b w-full text-center">Shop</a>
+            <a href="./subscription.html" class="py-2 border-b w-full text-center">Subscriptions</a>
+            <a href="./checkout.html" class="py-2 w-full text-center">Cart <span id="cart-count"></span></a>
+        </nav>
     </header>
 
     <!--* first section -->
@@ -79,13 +96,13 @@
             </div>
         </div>
         <div class="w-full md:h-screen border-l border-black border-solid">
-            <img src="../assets/img/for_about/start_about.jpg" alt="about" class="w-full h-full object-cover"
+            <img src="../assets/img/for_about/start_about.jpg" alt="about" class="w-full h-full object-cover border-b"
                 data-aos="zoom-in">
         </div>
     </section>
 
     <!--* second section -->
-    <div class="flex flex-col justify-center items-center w-full border-x border-b border-black border-solid">
+    <section class="flex flex-col justify-center items-center w-full border-x border-b border-black border-solid">
         <div class="flex flex-col justify-center items-center w-full p-3 sm:p-20">
             <span class="text-sm font-medium leading-4 pb-6" data-aos="zoom-in">OUR STORY</span>
             <span class="font-medium text-2xl sm:text-4xl leading-tight pb-4" data-aos="zoom-in">Our Founder's Passion
@@ -97,10 +114,10 @@
                 beautiful, and distinctive bouquets.
             </p>
         </div>
-    </div>
+    </section>
 
     <!--* third section -->
-    <div class="flex flex-col sm:flex-row w-full border-x border-b border-black border-solid">
+    <section class="flex flex-col sm:flex-row w-full border-x border-b border-black border-solid">
         <div class=" w-full border-r border-black border-solid">
             <img class="h-full" src="../assets/img/for_about/2.png" alt="" data-aos="zoom-in">
         </div>
@@ -116,10 +133,10 @@
                 </p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--* fourth section -->
-    <div class=" flex flex-col-reverse sm:flex-row w-full border-x border-b border-black border-solid">
+    <section class=" flex flex-col-reverse sm:flex-row w-full border-x border-b border-black border-solid">
         <div class="flex flex-col p-2 lg:px-20 lg:pt-20 w-full">
             <div class="sticky top-32">
                 <span class="  font-medium text-2xl sm:text-4xl leading-tight pb-4" data-aos="zoom-in">Bouquets, Gifts &
@@ -136,10 +153,10 @@
         <div class=" w-full border-l border-black border-solid">
             <img class="h-full" src="../assets/img/for_about/3.jpg" alt="" data-aos="zoom-in">
         </div>
-    </div>
+    </section>
 
     <!--* fifth section -->
-    <div class=" flex flex-col sm:flex-row w-full border-x border-b border-black border-solid">
+    <section class=" flex flex-col sm:flex-row w-full border-x border-b border-black border-solid">
         <div class=" w-full border-r border-black border-solid">
             <img class="h-full" src="../assets/img/for_about/4.jpg" alt="" data-aos="zoom-in">
         </div>
@@ -157,10 +174,10 @@
                 </p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--* sixth section -->
-    <div
+    <section
         class="flex flex-col sm:flex-row justify-center items-center w-full border-x border-b border-black border-solid">
         <div class="flex flex-col justify-center items-center w-full p-3 sm:p-20 text-center">
             <span class="text-2xl sm:text-4xl font-semibold leading-tight pb-6" data-aos="zoom-in">Discover Our
@@ -176,12 +193,12 @@
                 </button>
             </a>
         </div>
-    </div>
+    </section>
 
     <!--* Footer -->
-    <footer class="flex border-b">
+    <footer class="flex flex-wrap border-b">
         <!-- first col -->
-        <section class="hidden md:flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
+        <section class="hidden sm:flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
             <p class="text-[#121212] leading-6">
                 Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas...
                 Reminds you 7 days before. No spam or sharing your address
@@ -209,7 +226,7 @@
                 </span>
                 <p class="text-[#808080] font-medium text-xl">Follow Us</p>
                 <span>
-                    <span class="flex gap-8 justify-center items-center w-full">
+                    <span class="flex gap-2 lg:gap-8 justify-center items-center w-full">
                         <a href=""> <img src="../assets/img/icons/Instagram.svg" alt="social icon"> </a>
                         <a href=""> <img src="../assets/img/icons/Pinterest.svg" alt="social icon"> </a>
                         <a href=""> <img src="../assets/img/icons/Facebook.svg" alt="social icon"> </a>
@@ -243,7 +260,7 @@
             </span>
         </section>
         <!-- fourth col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+        <section class="flex flex-col p-2 sm:p-10 items-start gap-6 border-r flex-1">
             <p class="text-[#808080] font-medium text-xl">About Us</p>
             <ul class="flex flex-col gap-2 text-[#121212] font-medium">
                 <li class="mb-1"> <a href=""> Our story </a></li>
@@ -256,6 +273,7 @@
     </footer>
 
     <script src="../scripts/fresh_details.js"></script>
+    <script src="../scripts/header.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
         // To disable animation in mobile screen

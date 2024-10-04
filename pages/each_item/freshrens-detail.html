@@ -16,12 +16,13 @@
 <body>
 
     <!--* Header -->
-    <header class="fixed top-0 w-full z-50 bg-white">
+    <header class="fixed top-0 w-full z-50 bg-white hidden sm:block">
         <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
             <ul class="flex border-l-0">
                 <li class="px-6 py-8 md:w-[190px]"><a href="../../index.html">Home</a></li>
                 <li class="px-6 py-8 md:w-[190px] border-l-0"><a href="../category.html">Shop</a></li>
             </ul>
+            <img class="block xl:hidden w-10" src="../../assets/img/icon.png" alt="logo">
             <ul class="flex">
                 <li class="px-6 py-8 md:w-[191px]"><a href="../subscription.html">Subscriptions</a></li>
                 <li class="px-6 py-8 md:w-[191px] border-r-0">
@@ -31,8 +32,24 @@
         </span>
     </header>
 
+    <!-- Header For Mobile -->
+    <header class="fixed top-0 w-full z-50 bg-white sm:hidden">
+        <div class="flex justify-between items-center px-4 py-3">
+            <img class="w-8" src="../../assets/img/icon.png" alt="logo">
+            <button id="burger-btn" class="text-3xl focus:outline-none">
+                &#9776;
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden flex flex-col items-center bg-white text-[#121212]">
+            <a href="../../index.html" class="py-2 border-b w-full text-center">Home</a>
+            <a href="../category.html" class="py-2 border-b w-full text-center">Shop</a>
+            <a href="../subscription.html" class="py-2 border-b w-full text-center">Subscriptions</a>
+            <a href="../checkout.html" class="py-2 w-full text-center">Cart <span id="cart-count"></span></a>
+        </nav>
+    </header>
+
     <!--* Order Section -->
-    <section class="flex justify-center mt-[85px]">
+    <section class="flex justify-center mt-14 sm:mt-[85px]">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-start sm:border-b max-h-screen">
             <!-- Flower Image -->
             <div id="flower-image" class="w-full h-auto">
@@ -198,6 +215,8 @@
     </footer>
 
     <script src="../../scripts/fresheners_detail.js"></script>
+    <script src="../../scripts/header.js"></script>
+
 </body>
 
 </html>
