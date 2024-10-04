@@ -100,50 +100,44 @@ var invalidphone = document.forms[0][2]
 var invalidrecname = document.forms[0][3]
 var invalidrecphone = document.forms[0][4]
 // submit validation
-document.getElementById("btn-sub").addEventListener('click',function (e) {
-    if (!userchk.test(invalidname1.value)||
-        !emailchk.test(invalidemail.value)|| 
-        !phonechk.test(invalidphone.value)|| 
-        !userchk.test(invalidrecname.value)|| 
-        !phonechk.test(invalidrecphone.value))
-     {
+document.getElementById("btn-sub").addEventListener('click', function (e) {
+    if (!userchk.test(invalidname1.value) ||
+        !emailchk.test(invalidemail.value) ||
+        !phonechk.test(invalidphone.value) ||
+        !userchk.test(invalidrecname.value) ||
+        !phonechk.test(invalidrecphone.value)) {
         e.preventDefault()
-     }
     }
+}
 )
 // input validation       not working
-invalidname1.addEventListener('input',function () {
-    if (!userchk.test(invalidname1.value))
-     {
-        invalidname1.class="border-red"
-     }
+invalidname1.addEventListener('input', function () {
+    if (!userchk.test(invalidname1.value)) {
+        invalidname1.class = "border-red"
     }
+}
 )
-invalidemail.addEventListener('input',function () {
-    if (!emailchk.test(invalidemail.value))
-     {
-        invalidemail.class="border-red"
-     }
+invalidemail.addEventListener('input', function () {
+    if (!emailchk.test(invalidemail.value)) {
+        invalidemail.class = "border-red"
     }
+}
 )
-invalidphone.addEventListener('input',function () {
-    if (!phonechk.test(invalidphone.value))
-     {
-        invalidphone.class="border-red"
-     }
+invalidphone.addEventListener('input', function () {
+    if (!phonechk.test(invalidphone.value)) {
+        invalidphone.class = "border-red"
     }
+}
 )
-invalidrecname.addEventListener('input',function () {
-    if (!userchk.test(invalidrecname.value))
-     {
-        invalidrecname.class="border-red"
-     }
+invalidrecname.addEventListener('input', function () {
+    if (!userchk.test(invalidrecname.value)) {
+        invalidrecname.class = "border-red"
     }
+}
 )
-invalidrecphone.addEventListener('input',function () {
-    if (!phonechk.test(invalidrecphone.value))
-     {
-        invalidrecphone.class="border-red"
-     }
+invalidrecphone.addEventListener('input', function () {
+    if (!phonechk.test(invalidrecphone.value)) {
+        invalidrecphone.class = "border-red"
     }
+}
 )
