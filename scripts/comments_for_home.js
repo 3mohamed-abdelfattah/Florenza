@@ -51,3 +51,22 @@ document.getElementById("Right-arrow-review").addEventListener("click", function
         document.getElementById("commentName").innerHTML = `– ${arrcommentName[i]}`
     }
 })
+var chkvalidNumber = /^\+?[0-9]+$/
+var validNumber = document.getElementById("valid-number")
+var btnvalidNumber = document.getElementById("btnvalid-number")
+var invalidmessage = document.getElementById("invalidMessage")
+btnvalidNumber.addEventListener("click",function (e) {
+    if (!chkvalidNumber.test(validNumber.value)) {
+        e.preventDefault()
+    }
+})
+validNumber.addEventListener("input",function () {
+    if (!chkvalidNumber.test(validNumber.value) ) {
+        invalidmessage.innerHTML = "*"
+        invalidmessage.style.color = "red"
+    }
+     else {
+        invalidmessage.innerHTML = "We will call you back"
+        invalidmessage.style.color = "rgb(18 18 18 / 0.7)"
+    }
+})

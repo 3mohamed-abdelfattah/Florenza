@@ -90,3 +90,60 @@ document.querySelector('form').addEventListener('submit', function (event) {
         alert("Please fill out all the required fields.");
     }
 });
+// validation
+var userchk = /^[a-zA-Z0-9_.]{3,15}$/
+var emailchk = /^[a-zA-Z]{3,}[a-zA-Z0-9_.]*@[a-zA-Z]{3,}.[a-zA-Z]{3,}$/
+var phonechk = /^01[0125][0-9]{8}$/
+var invalidname1 = document.forms[0][0]
+var invalidemail = document.forms[0][1]
+var invalidphone = document.forms[0][2]
+var invalidrecname = document.forms[0][3]
+var invalidrecphone = document.forms[0][4]
+// submit validation
+document.getElementById("btn-sub").addEventListener('click',function (e) {
+    if (!userchk.test(invalidname1.value)||
+        !emailchk.test(invalidemail.value)|| 
+        !phonechk.test(invalidphone.value)|| 
+        !userchk.test(invalidrecname.value)|| 
+        !phonechk.test(invalidrecphone.value))
+     {
+        e.preventDefault()
+     }
+    }
+)
+// input validation       not working
+invalidname1.addEventListener('input',function () {
+    if (!userchk.test(invalidname1.value))
+     {
+        invalidname1.class="border-red"
+     }
+    }
+)
+invalidemail.addEventListener('input',function () {
+    if (!emailchk.test(invalidemail.value))
+     {
+        invalidemail.class="border-red"
+     }
+    }
+)
+invalidphone.addEventListener('input',function () {
+    if (!phonechk.test(invalidphone.value))
+     {
+        invalidphone.class="border-red"
+     }
+    }
+)
+invalidrecname.addEventListener('input',function () {
+    if (!userchk.test(invalidrecname.value))
+     {
+        invalidrecname.class="border-red"
+     }
+    }
+)
+invalidrecphone.addEventListener('input',function () {
+    if (!phonechk.test(invalidrecphone.value))
+     {
+        invalidrecphone.class="border-red"
+     }
+    }
+)
