@@ -9,6 +9,10 @@
             "password": "omer112233"
         },
         {
+            "username": "master",
+            "password": "master"
+        },
+        {
             "username": "admin",
             "password": "admin123"
         }
