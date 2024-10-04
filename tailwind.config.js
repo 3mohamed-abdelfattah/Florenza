@@ -9,11 +9,12 @@ module.exports = {
         primaryBackground: "#FFFFFF",
       },
       screens: {
-        '2xl': '1900px',
+        '2xl': '1440px',
         'xl': '1250px',
         'lg': '950px',
         'md': '850px',
         'sm': '600px',
+        'xm': '400px',
       },
     },
   },

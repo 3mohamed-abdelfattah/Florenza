@@ -16,6 +16,7 @@
     display: inline-block;
     overflow: hidden;
     height: 360px;
+    width: 360px;
     border: 1px solid black
 }
 
@@ -28,6 +29,7 @@
 .img-container img:hover {
     transform: scale(1.2);
 }
+
 .pointerCursor:hover {
     cursor: pointer;
 }

@@ -17,12 +17,12 @@
     <header class="fixed top-0 w-full z-50 bg-white">
         <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
             <ul class="flex border-l-0">
-                <li class="px-6 py-8 w-[180px] border-l-0"><a href="./pages/category.html">Shop</a></li>
-                <li class="px-6 py-8 w-[180px]"><a href="./pages/about.html">About us</a></li>
+                <li class="px-6 py-8 md:w-[180px] border-l-0"><a href="./pages/category.html">Shop</a></li>
+                <li class="px-6 py-8 md:w-[180px]"><a href="./pages/about.html">About us</a></li>
             </ul>
             <ul class="flex">
-                <li class="px-6 py-8 w-[179px]"><a href="./pages/subscription.html">Subscriptions</a></li>
-                <li class="px-6 py-8 w-[180px] border-r-0">
+                <li class="px-6 py-8 md:w-[179px]"><a href="./pages/subscription.html">Subscriptions</a></li>
+                <li class="px-6 py-8 md:w-[180px] border-r-0">
                     <a href="./pages/checkout.html" class="relative">Cart <span id="cart-count"></span></a>
                 </li>
             </ul>
@@ -30,14 +30,14 @@
     </header>
 
     <!--* Hero Section -->
-    <main class="flex items-start mt-[85px]">
+    <main class="flex flex-col lg:flex-row items-start mt-[85px]">
         <!-- Left Colum Side -->
-        <section class="sticky top-32 w-[720px] flex justify-center items-center">
-            <aside class="w-[560px] m-20">
+        <section class="lg:sticky top-32 max-w-fit min-[1440px]:w-[720px] flex justify-center items-center">
+            <aside class="w-fit min-[1440px]:w-[560px] m-10 min-[1440px]:m-20">
                 <!-- Brand Name Section -->
                 <div class=" flex flex-col border-b gap-14">
                     <span class="flex container_text">
-                        <p class="text text-7xl font-medium text-[#121212]">Florenza</p>
+                        <p class="text text-6xl lg:text-7xl font-medium text-[#121212]">Florenza</p>
                         <span class="text">
                             <img src="./assets/img/icons/®.png" alt="rights logo">
                         </span>
@@ -51,50 +51,51 @@
                 </div>
                 <!-- Brand Desorption Section -->
                 <div class="flex place-items-end mt-6">
-                    <span class="img-hover border-r w-[256px] pr-6">
+                    <span class="img-hover border-r w-full sm:w-[256px] pr-6">
                         <img src="./assets/img/for_home/img_hero.png" alt="Hero Image" data-aos="zoom-out">
                     </span>
-                    <span class="w-[256px] pl-6 container_text">
-                        <p class="text text-[#121212E5] italic text-sm leading-6">Experience the joy of giving with our
-                            modern
-                            floral
-                            studio. Order online
-                            and send fresh flowers,
-                            plants and gifts today.</p>
+                    <span class="lg:w-[256px] sm:pl-6 container_text">
+                        <p class="text text-[#121212E5] italic lg:text-sm leading-6 pl-1">
+                            Experience the joy of giving with our modern floral studio. Order online and send fresh
+                            flowers, plants and gifts today.
+                        </p>
                     </span>
                 </div>
             </aside>
         </section>
 
         <!-- Right Colum Side -->
-        <section class="flex flex-col w-full items-end">
+        <section
+            class="flex flex-wrap lg:flex-col w-full gap-5 lg:gap-0 justify-center lg:items-end border-t lg:border-t-0">
             <!-- Item 1 -->
             <article class="flex relative">
-                <a href="./pages/catogry_pages/fresh_flowers.html" class="flex static">
-                    <span class="p-6 border-l h-[360px] w-[360px] flex flex-col justify-center items-center text-center"
-                        data-aos="fade-right">
-                        <p class="text-[38px] hover:text-4xl hover:underline" data-aos="zoom-in">Fresh Flowers</p>
-                        <button class="flex absolute bottom-6 gap-1 hover:scale-110">
+                <a href="./pages/catogry_pages/fresh_flowers.html" class="flex flex-col xl:flex-row static">
+                    <span
+                        class="p-6 lg:border-l lg:h-[360px] w-[360px] flex flex-col justify-center items-center text-center">
+                        <p class="text-[38px] kg:hover:text-4xl hover:underline" data-aos="zoom-in">Fresh Flowers</p>
+                        <button class="flex absolute bottom-6 gap-1 hover:scale-110 z-10">
                             Shop now
                             <img src="./assets/img/icons/arrow-right.svg" alt="right arrow"
                                 class="transition ease-in-out delay-150 hover:translate-x-2 hover:scale-110 duration-300">
                         </button>
                     </span>
-                    <div class="img-container" data-aos="fade-left">
-                        <img src="./assets/img/for_home/card_item/card_item1.webp" alt="Flower Image">
+                    <div class="img-container">
+                        <img src="./assets/img/for_home/card_item/card_item1.webp" alt="Flower Image"
+                            data-aos="zoom-in">
                     </div>
                 </a>
             </article>
             <!-- Item 2 -->
             <article class="flex relative">
-                <a href="./pages/catogry_pages/dried_flowers.html" class="flex static">
-                    <div class="img-container" data-aos="fade-right">
-                        <img src="./assets/img/for_home/card_item/card_item2.webp" alt="Flower Image">
+                <a href="./pages/catogry_pages/dried_flowers.html" class="flex flex-col-reverse xl:flex-row static">
+                    <div class="img-container">
+                        <img src="./assets/img/for_home/card_item/card_item2.webp" alt="Flower Image"
+                            data-aos="zoom-in">
                     </div>
-                    <span class="p-6 h-[360px] w-[360px] flex flex-col justify-center items-center text-center"
-                        data-aos="fade-left">
-                        <p class="text-[38px] hover:text-4xl hover:underline" data-aos="zoom-in">Dried Flowers</p>
-                        <button class="flex absolute bottom-6 gap-1 hover:scale-110">
+                    <span
+                        class="p-6 lg:h-[360px] w-[360px] flex flex-col justify-center items-center text-center lg:border-l xl:border-l-0">
+                        <p class="text-[38px] lg:hover:text-4xl hover:underline" data-aos="zoom-in">Dried Flowers</p>
+                        <button class="flex absolute bottom-6 gap-1 hover:scale-110 z-10">
                             <img src="./assets/img/icons/arrow-left.svg" alt="right arrow"
                                 class="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300">
                             Shop now
@@ -104,31 +105,33 @@
             </article>
             <!-- Item 3 -->
             <article class="flex relative">
-                <a href="./pages/catogry_pages/live_plants.html" class="flex static">
-                    <span data-aos="fade-right"
-                        class="p-6 border-l h-[360px] w-[360px] flex flex-col justify-center items-center text-center">
-                        <p class="text-[38px] hover:text-4xl hover:underline" data-aos="zoom-in">Live Plants</p>
-                        <button class="flex absolute bottom-6 gap-1 hover:scale-110">
+                <a href="./pages/catogry_pages/live_plants.html" class="flex flex-col xl:flex-row static">
+                    <span
+                        class="p-6 lg:border-l lg:h-[360px] w-[360px] flex flex-col justify-center items-center text-center">
+                        <p class="text-[38px] lg:hover:text-4xl hover:underline" data-aos="zoom-in">Live Plants</p>
+                        <button class="flex absolute bottom-6 gap-1 hover:scale-110 z-10">
                             Shop now
                             <img src="./assets/img/icons/arrow-right.svg" alt="right arrow"
                                 class="transition ease-in-out delay-150 hover:translate-x-2 hover:scale-110 duration-300">
                         </button>
                     </span>
-                    <div class="img-container" data-aos="fade-left">
-                        <img src="./assets/img/for_home/card_item/card_item3.webp" alt="Flower Image">
+                    <div class="img-container">
+                        <img src="./assets/img/for_home/card_item/card_item3.webp" alt="Flower Image"
+                            data-aos="zoom-in">
                     </div>
                 </a>
             </article>
             <!-- Item 4 -->
             <article class="flex relative">
-                <a href="./pages/catogry_pages/aroma_candels.html" class="flex static">
-                    <div class="img-container" data-aos="fade-right">
-                        <img src="./assets/img/for_home/card_item/card_item4.webp" alt="Flower Image">
+                <a href="./pages/catogry_pages/aroma_candels.html" class="flex flex-col-reverse xl:flex-row static">
+                    <div class="img-container">
+                        <img src="./assets/img/for_home/card_item/card_item4.webp" alt="Flower Image"
+                            data-aos="zoom-in">
                     </div>
-                    <span class="p-6 h-[360px] w-[360px] flex flex-col justify-center items-center text-center"
-                        data-aos="fade-left">
-                        <p class="text-[38px] hover:text-4xl hover:underline" data-aos="zoom-in">Aroma Candels</p>
-                        <button class="flex absolute bottom-6 gap-1 hover:scale-110">
+                    <span
+                        class="p-6 lg:h-[360px] w-[360px] flex flex-col justify-center items-center text-center lg:border-l xl:border-l-0">
+                        <p class="text-[38px] lg:hover:text-4xl hover:underline" data-aos="zoom-in">Aroma Candels</p>
+                        <button class="flex absolute bottom-6 gap-1 hover:scale-110 z-10">
                             <img src="./assets/img/icons/arrow-left.svg" alt="right arrow"
                                 class="transition ease-in-out delay-150 hover:-translate-x-2 hover:scale-110 duration-300">
                             Shop now
@@ -138,18 +141,19 @@
             </article>
             <!-- Item 5 -->
             <article class="flex relative">
-                <a href="./pages/catogry_pages/fresheners.html" class="flex static">
-                    <span data-aos="fade-right"
-                        class="p-6 border-l h-[360px] w-[360px] flex flex-col justify-center items-center text-center">
-                        <p class="text-[38px] hover:text-4xl hover:underline" data-aos="zoom-in">Fresheners</p>
-                        <button class="flex absolute bottom-6 gap-1 hover:scale-110">
+                <a href="./pages/catogry_pages/fresheners.html" class="flex flex-col xl:flex-row static">
+                    <span
+                        class="p-6 lg:border-l lg:h-[360px] w-[360px] flex flex-col justify-center items-center text-center">
+                        <p class="text-[38px] lg:hover:text-4xl hover:underline" data-aos="zoom-in">Fresheners</p>
+                        <button class="flex absolute bottom-6 gap-1 hover:scale-110 z-10">
                             Shop now
                             <img src="./assets/img/icons/arrow-right.svg" alt="right arrow"
                                 class="transition ease-in-out delay-150 hover:translate-x-2 hover:scale-110 duration-300">
                         </button>
                     </span>
-                    <div class="img-container" data-aos="fade-left">
-                        <img src="./assets/img/for_home/card_item/card_item5.webp" alt="Flower Image">
+                    <div class="img-container">
+                        <img src="./assets/img/for_home/card_item/card_item5.webp" alt="Flower Image"
+                            data-aos="zoom-in">
                     </div>
                 </a>
             </article>
@@ -158,16 +162,16 @@
 
 
     <!--* About Section -->
-    <main class="flex items-start border-t  justify-between">
+    <main class="flex flex-col lg:flex-row items-start border-t justify-between">
         <!-- Left Colum Side -->
-        <section class="sticky top-8 flex justify-center items-center">
-            <aside class="w-[560px] m-20 container_text" data-aos="zoom-in-right">
-                <p class="text text-6xl font-medium text-[#121212]">About us</p>
+        <section class="lg:sticky top-8 flex justify-center items-center">
+            <aside class="w-[560px] m-5 lg:m-20 container_text" data-aos="zoom-in-right">
+                <p class="text text-5xl lg:text-6xl font-medium text-[#121212]">About us</p>
             </aside>
         </section>
 
         <!-- Right Colum Side -->
-        <section class="flex flex-col p-20 items-start w-full border-l mr-[2px] ">
+        <section class="flex flex-col p-5 sm:p-20 items-start w-full border-l mr-[2px] ">
             <!-- our story -->
             <p class="text-[#121212]/80 font-medium uppercase mb-6" data-aos="zoom-in-right">our story</p>
             <p class="text-[#121212] text-5xl mb-4" data-aos="zoom-in-right">Kyiv LuxeBouquets</p>
@@ -191,18 +195,18 @@
     </main>
 
     <!--* Why us Section -->
-    <main class="flex items-start border-t justify-between">
+    <main class="flex flex-col lg:flex-row items-start border-t justify-between">
         <!-- Left Colum Side -->
-        <section class="sticky top-32 flex justify-center items-center">
-            <aside class="w-[560px] m-20">
-                <p class="text-6xl font-medium text-[#121212]" data-aos="zoom-in-right">Why choose us ?</p>
+        <section class="lg:sticky top-32 flex justify-center items-center">
+            <aside class="w-[560px] m-5 lg:m-20">
+                <p class=" text-5xl lg:text-6xl font-medium text-[#121212]" data-aos="zoom-in-right">Why choose us ?</p>
             </aside>
         </section>
 
         <!-- Right Colum Side -->
         <section class="flex flex-col items-start w-full border-l">
             <!-- Article 1 -->
-            <article class="border-b p-20">
+            <article class="border-b p-5 sm:p-20">
                 <p class="text-[#121212] text-5xl mb-4" data-aos="zoom-in-right">Stylish bouquets by florists</p>
                 <p class="text-[#121212]/60 leading-6" data-aos="zoom-in-right">
                     At our floral studio, our professional florists craft the most elegant and stylish bouquets using
@@ -214,7 +218,7 @@
                 </p>
             </article>
             <!-- Article 2 -->
-            <article class="border-b p-20">
+            <article class="border-b p-5 sm:p-20">
                 <p class="text-[#121212] text-5xl mb-4" data-aos="zoom-in-right">On-time delivery</p>
                 <p class="text-[#121212]/60 leading-6" data-aos="zoom-in-right">
                     Never miss a moment with our on-time flower delivery service. Our couriers will deliver your bouquet
@@ -223,7 +227,7 @@
                 </p>
             </article>
             <!-- Article 3 -->
-            <article class="border-b p-20">
+            <article class="border-b p-5 sm:p-20">
                 <p class="text-[#121212] text-5xl mb-4" data-aos="zoom-in-right">Safe payment</p>
                 <p class="text-[#121212]/60 leading-6" data-aos="zoom-in-right">
                     You can feel secure when placing an order with us, as we use industry-standard security measures to
@@ -232,7 +236,7 @@
                 </p>
             </article>
             <!-- Article 4 -->
-            <article class="p-20">
+            <article class="p-5 sm:p-20">
                 <p class="text-[#121212] text-5xl mb-4" data-aos="zoom-in-right">Subscription by your needs</p>
                 <p class="text-[#121212]/60 leading-6" data-aos="zoom-in-right">
                     With our subscription service tailored to your specific needs, you can enjoy the convenience of
@@ -246,14 +250,15 @@
 
 
     <!--* Contact US Section -->
-    <main id="contact" class="flex items-start border-t justify-between">
+    <main id="contact" class="flex items-center xl:items-start border-t justify-between">
         <!-- Left Colum Side -->
-        <section class="flex flex-col justify-center items-cente w-full">
-            <aside class="w-full p-20">
-                <p class="text-6xl font-medium text-[#121212] mb-7" data-aos="zoom-in-right">To Contact Us</p>
+        <section class="hidden sm:flex flex-col justify-center items-center w-full">
+            <aside class="w-full p-2 xl:p-20">
+                <p class="text-center text-4xl xl:text-6xl font-medium text-[#121212] mb-7" data-aos="zoom-in-right">To
+                    Contact Us</p>
                 <p class="text-[#121212]/70 mb-4" data-aos="zoom-in-right">We will call you back</p>
                 <!-- call back -->
-                <span class="flex gap-4">
+                <span class="flex flex-col xl:flex-row gap-4">
                     <input class="border p-4 w-full" type="text" placeholder="+380 XX XXX XX XX"
                         data-aos="zoom-in-right">
                     <button
@@ -263,14 +268,15 @@
                 </span>
             </aside>
 
-            <aside class="w-full">
+            <aside class="w-full hidden xl:block">
                 <!-- phone and address -->
                 <span class="flex justify-center items-center text-center border w-full border-t border-b">
-                    <p class="text-[#121212] text-4xl w-full py-4 border-r" data-aos="zoom-in-right">Phone</p>
-                    <p class="text-[#121212] text-4xl w-full py-4" data-aos="zoom-in-right">Address</p>
+                    <p class="text-[#121212] text-xl xl:text-4xl w-full py-4 border-r">Phone
+                    </p>
+                    <p class="text-[#121212] text-xl xl:text-4xl w-full py-4">Address</p>
                 </span>
                 <!-- details -->
-                <div class="flex w-full h-[339px] text-[#121212] font-medium">
+                <div class="flex w-full xl:h-[339px] text-[#121212] font-medium text-sm xl:text-base">
                     <span class="flex flex-col justify-center items-center text-center w-full p-6 border-r gap-6">
                         <p class="flex gap-1" data-aos="zoom-in-right">
                             <img src="./assets/img/icons/call.svg" alt="call">
@@ -300,8 +306,10 @@
             </div>
             <!-- follow us -->
             <article class="flex">
-                <p class="text-[#121212] text-4xl font-medium px-10 py-4 border-r w-full text-center"
-                    data-aos="zoom-in">Follow us</p>
+                <p
+                    class="hidden sm:block text-[#121212] text-xl xl:text-4xl font-medium px-10 py-4 border-r w-full text-center">
+                    Follow us
+                </p>
                 <span class="flex gap-8 justify-center items-center w-full">
                     <a href="" class="hover:scale-125">
                         <img src="./assets/img/icons/Instagram.svg" alt="social icon" data-aos="zoom-out">
@@ -325,18 +333,21 @@
 
     <!--* Our Service Section -->
     <main>
-        <header class="flex justify-center items-center text-6xl font-medium py-20" data-aos="zoom-out">
-            Our Service
+        <header class="flex justify-center items-center text-4xl xl:text-6xl font-medium py-20">
+            <p data-aos="zoom-out">
+                Our Service
+            </p>
         </header>
         <section class="flex">
-            <span class="img-hover w-full">
+            <span class="hidden sm:block img-hover w-full">
                 <img src="./assets/img/for_home/image.png" style="width: 100%;" alt="Flower Story" data-aos="zoom-out">
             </span>
-            <article class="flex flex-col p-20 items-center justify-center text-center w-full border-l">
+            <article class="flex flex-col p-5 sm:p-20 items-center justify-center text-center w-full border-l">
                 <!-- our Service -->
                 <p class="text-[#121212]/80 font-medium uppercase mb-6" data-aos="zoom-in-right">service</p>
-                <p class="font-medium text-[#121212] text-5xl mb-7" data-aos="zoom-in-right">Flower Subscriptions</p>
-                <p class="text-[#121212]/70 text-lg leading-6 mb-16" data-aos="zoom-in-right">
+                <p class="font-medium text-[#121212] text-3xl xl:text-5xl mb-7" data-aos="zoom-in-right">Flower
+                    Subscriptions</p>
+                <p class="text-[#121212]/70 xl:text-lg leading-6 mb-16" data-aos="zoom-in-right">
                     Experience the convenience and savings of regular flower deliveries with our flexible subscription
                     service - up to 30% more profitable than one-time purchases.
                 </p>
@@ -367,15 +378,15 @@
 
     <!--* Clients Say Section -->
     <main>
-        <article class="flex flex-col items-center justify-center text-center p-20 border">
+        <article class="flex flex-col items-center justify-center text-center p-5 sm:p-20 border">
             <img src="./assets/img/icons/google logo.png" alt="google logo" class="mb-4" data-aos="zoom-in">
             <!-- our Service -->
             <p class="text-[#121212]/80 uppercase mb-6" data-aos="zoom-in">Reviews</p>
-            <p class="text-[#121212] font-medium text-5xl mb-10" data-aos="zoom-in">Our Clients say</p>
+            <p class="text-[#121212] font-medium text-3xl xl:text-5xl mb-10" data-aos="zoom-in">Our Clients say</p>
             <span class="flex items-center justify-center">
                 <img class="pointerCursor" id="Left-arrow-review" src="./assets/img/icons/left arrow.svg"
                     alt="Left arrow">
-                <p id="commentText" class="text-[#121212]/80 text-3xl mb-4 italic" data-aos="zoom-in">
+                <p id="commentText" class="text-[#121212]/80 text-xl xl:text-3xl mb-4 italic" data-aos="zoom-in">
                     “Ordered flowers online and they were the best bouquet! Impressed everyone around. Highly recommend
                     this
                     flower shop!”
@@ -385,7 +396,7 @@
             </span>
             <p id="commentName" class="text-[#121212]/95 font-medium uppercase mb-8" data-aos="zoom-in">– Ronald
                 Richards</p>
-            <!-- <img src="./assets/img/icons/Slide Nav.png" alt="nav slide" class="mb-16" data-aos="zoom-in"> -->
+            <img src="./assets/img/icons/Slide Nav.png" alt="nav slide" class="mb-16" data-aos="zoom-in">
             <button class="px-8 py-4 uppercase border text-[#121212] font-medium hover:bg-black hover:text-white"
                 data-aos="zoom-in">
                 Read reviews
@@ -394,7 +405,7 @@
     </main>
 
     <!--* Footer -->
-    <footer class="flex border-b">
+    <footer class="flex flex-wrap border-b">
         <!-- first col -->
         <section class="flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
             <p class="text-[#121212] leading-6">
@@ -480,9 +491,13 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
+        // To disable animation in mobile screen
         document.addEventListener('DOMContentLoaded', function () {
             AOS.init({
                 duration: 800,
+                disable: function () {
+                    return window.innerWidth < 600;
+                }
             });
         });
     </script>

@@ -58,7 +58,7 @@ document.getElementById('login-form').addEventListener('submit', function (event
 
                 setTimeout(() => {
                     window.location.href = '../index.html';
-                }, 3000);
+                }, 2100);
 
             } else {
                 // Toastify for Failure
