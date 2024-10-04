@@ -16,24 +16,26 @@
     <header class="fixed top-0 w-full z-50 bg-white">
         <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
             <ul class="flex border-l-0">
-                <li class="px-6 py-8 w-[190px]"><a href="../../index.html">Home</a></li>
-                <li class="px-6 py-8 w-[190px] border-l-0"><a href="../category.html">Shop</a></li>
+                <li class="px-6 py-8 md:w-[190px]"><a href="../../index.html">Home</a></li>
+                <li class="px-6 py-8 md:w-[190px] border-l-0"><a href="../category.html">Shop</a></li>
             </ul>
             <ul class="flex">
-                <li class="px-6 py-8 w-[191px]"><a href="../subscription.html">Subscriptions</a></li>
-                <li class="px-6 py-8 w-[191px] border-r-0">
+                <li class="px-6 py-8 md:w-[191px]"><a href="../subscription.html">Subscriptions</a></li>
+                <li class="px-6 py-8 md:w-[191px] border-r-0">
                     <a href="../checkout.html" class="relative">Cart <span id="cart-count"></span></a>
                 </li>
             </ul>
         </span>
     </header>
 
-    <main class="flex justify-center items-center mt-[85px]">
+    <main class="flex flex-col md:flex-row justify-center items-center mt-[85px]">
         <!-- Left Section -->
         <section
-            class="sticky bottom-0 w-full bg-[url('../../assets/img/our_items/live_plants/item.webp')] h-svh bg-cover bg-center">
+            class="sticky bottom-0 w-full bg-[url('../../assets/img/our_items/live_plants/item.webp')] h-fit md:h-svh bg-cover bg-center">
             <div class="absolute bg-black/40 h-full w-full -z-10"></div>
-            <p class="flex justify-center items-center h-full text-white text-7xl font-semibold z-10">Live Plants</p>
+            <p
+                class="flex justify-center items-center h-full text-white py-40 md:py-0 text-4xl md:text-7xl font-semibold z-10">
+                Live Plants</p>
         </section>
 
         <!-- Right Section -->
@@ -43,7 +45,7 @@
     </main>
 
     <!--* Footer -->
-    <footer class="flex border-b border-t">
+    <footer class="flex flex-wrap border-b">
         <!-- first col -->
         <section class="flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
             <p class="text-[#121212] leading-6">
@@ -118,6 +120,7 @@
             </ul>
         </section>
     </footer>
+
     <script>
         fetch('../../data/itemData.json')
             .then(response => response.json())
@@ -139,8 +142,8 @@
                         <img src="../../assets/img/our_items/live_plants/${flower.image}" 
                             class="object-cover object-center transform transition duration-500 zoom-image" 
                             alt="${flower.title}">
-                        <span class="absolute bottom-5 transition duration-500 hover:translate-y-1">
-                            <p class="font-medium p-1">${flower.title}</p>
+                            <span class="absolute bottom-1 sm:bottom-5 transition duration-500 hover:translate-y-1">
+                            <p class="font-medium text-sm sm:text-base p-1">${flower.title}</p>
                             <p class="text-[#808080] font-medium text-sm">price $${flower.price}</p>
                         </span>
                     </a>
