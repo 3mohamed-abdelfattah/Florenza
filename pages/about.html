@@ -8,108 +8,180 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/pages_style/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <title>Florenza</title>
 </head>
 
 <body>
+
     <!--* Header -->
     <header class="fixed top-0 w-full z-50 bg-white">
         <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
             <ul class="flex border-l-0">
-                <li class="px-6 py-8 w-[180px]"><a href="../index.html">Home</a></li>
-                <li class="px-6 py-8 w-[180px] border-l-0"><a href="../pages/category.html">Shop</a></li>
+                <li class="px-6 py-8 md:w-[180px] border-l-0"><a href="../pages/category.html">Shop</a></li>
+                <li class="px-6 py-8 md:w-[180px]"><a href="../index.html">Home</a></li>
             </ul>
             <ul class="flex">
-                <li class="px-6 py-8 w-[180px]"><a href="../pages/subscription.html">Subscriptions</a></li>
-                <li class="px-6 py-8 w-[191px] border-r-0">
+                <li class="px-6 py-8 md:w-[180px]"><a href="../pages/subscription.html">Subscriptions</a></li>
+                <li class="px-6 py-8 md:w-[191px] border-r-0">
                     <a href="../checkout.html" class="relative">Cart <span id="cart-count"></span></a>
                 </li>
             </ul>
         </span>
     </header>
-    <!-- first section -->
-    <div class=" flex flex-row justify-center items-center w-full border-x border-y border-black border-solid">
-        <div class="flex flex-col items-center w-1/2 py-44 px-28">
-            <span class="font-Roboto font-semibold text-5xl leading-relaxed pb-6">Our Story</span>
-            <span class="font-Dancing Script font-normal text-3xl leading-8 pb-6">About</span>
-            <span class="font-Roboto font-semibold text-5xl leading-relaxed pb-6">Kyiv LuxeBouquets</span>
-            <p class="font-Roboto font-normal text-lg leading-6 text-center pb-16">Discover Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread Joy with Our Online Flower Delivery Service</p>
+
+    <!--* first section -->
+    <section
+        class="flex flex-col-reverse md:flex-row justify-center items-center w-full border-b pb-2 sm:pb-0 h-screen">
+        <div class="flex flex-col items-center w-full">
+            <span class="  font-semibold text-4xl sm:text-6xl leading-relaxed sm:pb-6 font_dance" data-aos="zoom-in">Our
+                Story</span>
+            <span class="font-Dancing Script font-normal text-3xl sm:text-5xl leading-8 sm:pb-6 font_dance"
+                data-aos="zoom-in">About</span>
+            <span class="  font-semibold text-4xl sm:text-6xl leading-relaxed pb-6 font_dance" data-aos="zoom-in">Kyiv
+                LuxeBouquets</span>
+            <p class="  font-normal sm:text-xl leading-6 text-center pb-16 font_dance" data-aos="zoom-in">Discover
+                Uniquely
+                Crafted
+                Bouquets
+                and Gifts for Any Occasion: Spread Joy with Our Online Flower Delivery Service</p>
             <div class="flex flex-row justify-between items-center">
-               <a href=""><div class="w-12 h-12 mr-8 border-x border-y rounded-full border-black border-solid flex justify-center items-center"><img class="w-6 h-6" src="../assets/img/icons/Instagram.svg" alt="Instagram"></div></a>
-               <a href=""><div class="w-12 h-12 mr-8  border-x border-y rounded-full border-black border-solid flex justify-center items-center"><img class="w-6 h-6" src="../assets/img/icons/Pinterest.svg" alt="Pinterest"></div></a>
-               <a href=""><div class="w-12 h-12 mr-8  border-x border-y rounded-full border-black border-solid flex justify-center items-center"><img class="w-6 h-6" src="../assets/img/icons/Facebook.svg" alt="Facebook"></div></a>
-               <a href=""><div class="w-12 h-12 mr-8  border-x border-y rounded-full border-black border-solid flex justify-center items-center"><img class="w-6 h-6" src="../assets/img/icons/Twitter.svg" alt="Twitter"></div></a>
-               <a href=""><div class="w-12 h-12 flex justify-center items-center border-x border-y rounded-full border-black border-solid"><img class="w-6 h-6" src="../assets/img/icons/Telegram.svg" alt="Telegram"></div></a>
+                <a href="" class="hover:scale-110" data-aos="zoom-in">
+                    <div
+                        class="w-12 h-12 mr-8 border-x border-y rounded-full border-black border-solid flex justify-center items-center">
+                        <img class="w-6 h-6" src="../assets/img/icons/Instagram.svg" alt="Instagram">
+                    </div>
+                </a>
+                <a href="" class="hover:scale-110" data-aos="zoom-in">
+                    <div
+                        class="w-12 h-12 mr-8  border-x border-y rounded-full border-black border-solid flex justify-center items-center">
+                        <img class="w-6 h-6" src="../assets/img/icons/Pinterest.svg" alt="Pinterest">
+                    </div>
+                </a>
+                <a href="" class="hover:scale-110" data-aos="zoom-in">
+                    <div
+                        class="w-12 h-12 mr-8  border-x border-y rounded-full border-black border-solid flex justify-center items-center">
+                        <img class="w-6 h-6" src="../assets/img/icons/Facebook.svg" alt="Facebook">
+                    </div>
+                </a>
+                <a href="" class="hover:scale-110" data-aos="zoom-in">
+                    <div
+                        class="w-12 h-12 mr-8  border-x border-y rounded-full border-black border-solid flex justify-center items-center">
+                        <img class="w-6 h-6" src="../assets/img/icons/Twitter.svg" alt="Twitter">
+                    </div>
+                </a>
+                <a href="" class="hover:scale-110" data-aos="zoom-in">
+                    <div
+                        class="w-12 h-12 flex justify-center items-center border-x border-y rounded-full border-black border-solid">
+                        <img class="w-6 h-6" src="../assets/img/icons/Telegram.svg" alt="Telegram">
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="w-1/2 border-l border-black border-solid"><img src="../assets/img/for_about/start_about1.jpg" alt="about"></div>
-    </div>
-    <!-- second section -->
+        <div class="w-full md:h-screen border-l border-black border-solid">
+            <img src="../assets/img/for_about/start_about.jpg" alt="about" class="w-full h-full object-cover"
+                data-aos="zoom-in">
+        </div>
+    </section>
+
+    <!--* second section -->
     <div class="flex flex-col justify-center items-center w-full border-x border-b border-black border-solid">
-        <div class="flex flex-col justify-center items-center w-full p-20">
-        <span class="font-Roboto text-sm font-medium leading-4 pb-6">OUR STORY</span>
-        <span class="font-Roboto font-medium text-4xl leading-tight pb-4">Our Founder's Passion </span>
-        <p class="font-Roboto font-normal text-base leading-6 w-1/2 text-center">Kyiv LuxeBouquets was founded in 2010 by Natalia Zelinska 
-           with the goal of bringing unique and exquisite bouquets to the people of Kyiv.
-           Natalia has always had a passion for flowers and design,
-           and his vision was to create a local floral studio that would specialize in the creation and delivery of fresh,
-           beautiful, and distinctive bouquets.
-        </p>
+        <div class="flex flex-col justify-center items-center w-full p-3 sm:p-20">
+            <span class="text-sm font-medium leading-4 pb-6" data-aos="zoom-in">OUR STORY</span>
+            <span class="font-medium text-2xl sm:text-4xl leading-tight pb-4" data-aos="zoom-in">Our Founder's Passion
+            </span>
+            <p class=" font-normal text-sm sm:text-base leading-6  w-full text-center" data-aos="zoom-in">
+                Kyiv LuxeBouquets was founded in 2010 by Natalia Zelinska with the goal of bringing unique and exquisite
+                bouquets to the people of Kyiv. Natalia has always had a passion for flowers and design, and his vision
+                was to create a local floral studio that would specialize in the creation and delivery of fresh,
+                beautiful, and distinctive bouquets.
+            </p>
         </div>
     </div>
-    <!-- third section -->
-     <div class=" flex flex-row w-full border-x border-b border-black border-solid">
-        <div class="w-1/2 border-r border-black border-solid"><img src="../assets/img/for_about/2.png" alt=""></div>
-        <div class="flex flex-col px-20 pt-20 w-1/2 ">
-            <span class="font-Roboto font-medium text-4xl leading-tight pb-4">Expertly Crafted Bouquets</span>
-            <p class="font-Roboto font-normal text-base leading-6">At Kyiv LuxeBouquets, we take pride in our team of talented and experienced florists who carefully select each bloom,
-                ensuring that only the freshest and most stunning flowers make it into our bouquets.
-                We work directly with farms to source the highest quality flowers,
-                and our skilled florists expertly craft each bouquet to perfection.
-            </p>
+
+    <!--* third section -->
+    <div class="flex flex-col sm:flex-row w-full border-x border-b border-black border-solid">
+        <div class=" w-full border-r border-black border-solid">
+            <img class="h-full" src="../assets/img/for_about/2.png" alt="" data-aos="zoom-in">
         </div>
-     </div>
-     <!-- fourth section -->
-     <div class=" flex flex-row w-full border-x border-b border-black border-solid">
-        <div class="flex flex-col px-20 pt-20 w-1/2 ">
-            <span class="font-Roboto font-medium text-4xl leading-tight pb-4">Bouquets, Gifts & Ambiance</span>
-            <p class="font-Roboto font-normal text-base leading-6">
-                In addition to our stunning bouquets, we also offer a collection of dried bouquets, house plants,
-                and fragrant candles from luxury brands to create the perfect ambiance. We believe that sending flowers,
-                plants, and gifts should be easy and stress-free,
-                which is why we offer same or next-day delivery throughout Kyiv.
-            </p>
-        </div>
-        <div class="w-1/2 border-l border-black border-solid"><img src="../assets/img/for_about/3.jpg" alt=""></div>
-     </div>
-     <!-- fifth section -->
-     <div class=" flex flex-row w-full border-x border-b border-black border-solid">
-        <div class="w-1/2 border-r border-black border-solid"><img src="../assets/img/for_about/4.jpg" alt=""></div>
-        <div class="flex flex-col px-20 pt-20 w-1/2 ">
-            <span class="font-Roboto font-medium text-4xl leading-tight pb-4">Making Every Day Special</span>
-            <p class="font-Roboto font-normal text-base leading-6">
-                 Our mission is simple: to make every day special and memorable for our customers.
-                 We are dedicated to providing the highest quality flowers, 
-                 exceptional customer service, and a seamless online experience that will make you feel confident and satisfied with your purchase.
-                 Thank you for choosing Kyiv LuxeBouquets.
-                 We look forward to bringing joy and happiness to your life with our beautiful bouquets and gifts.
-            </p>
-        </div>
-     </div>
-     <!-- sixth section -->
-     <div class="flex flex-col justify-center items-center w-full border-x border-b border-black border-solid">
-        <div class="flex flex-col justify-center items-center w-full p-20">
-        <span class="font-Roboto text-5xl font-semibold leading-tight pb-6">Discover Our Beautiful Bouquets</span>
-        <span class="font-Roboto font-medium text-lg leading-6 pb-14 w-2/4 text-center">
-            Explore our collection of exquisite bouquets and surprise your loved ones with the perfect gift. 
-            Click the button below to start shopping </span>
-        <button class="border border-black border-solid bg-black text-white h-14 w-72 hover:bg-white hover:text-black hover:border-2 transition-all">SHOP NOW</button>
+        <div class="flex flex-col p-2 lg:px-20 lg:pt-20 w-full ">
+            <div class="sticky top-32">
+                <span class="font-medium text-2xl sm:text-4xl leading-tight pb-4" data-aos="zoom-in">Expertly Crafted
+                    Bouquets</span>
+                <p class="font-normal text-sm sm:text-base leading-6" data-aos="zoom-in">
+                    At Kyiv LuxeBouquets, we take pride in our team of talented and experienced florists who carefully
+                    select each bloom, ensuring that only the freshest and most stunning flowers make it into our
+                    bouquets. We work directly with farms to source the highest quality flowers, and our skilled
+                    florists expertly craft each bouquet to perfection.
+                </p>
+            </div>
         </div>
     </div>
+
+    <!--* fourth section -->
+    <div class=" flex flex-col-reverse sm:flex-row w-full border-x border-b border-black border-solid">
+        <div class="flex flex-col p-2 lg:px-20 lg:pt-20 w-full">
+            <div class="sticky top-32">
+                <span class="  font-medium text-2xl sm:text-4xl leading-tight pb-4" data-aos="zoom-in">Bouquets, Gifts &
+                    Ambiance</span>
+                <p class="  font-normal text-sm sm:text-base leading-6" data-aos="zoom-in">
+                    In addition to our stunning bouquets, we also offer a collection of dried bouquets, house plants,
+                    and fragrant candles from luxury brands to create the perfect ambiance. We believe that sending
+                    flowers,
+                    plants, and gifts should be easy and stress-free,
+                    which is why we offer same or next-day delivery throughout Kyiv.
+                </p>
+            </div>
+        </div>
+        <div class=" w-full border-l border-black border-solid">
+            <img class="h-full" src="../assets/img/for_about/3.jpg" alt="" data-aos="zoom-in">
+        </div>
+    </div>
+
+    <!--* fifth section -->
+    <div class=" flex flex-col sm:flex-row w-full border-x border-b border-black border-solid">
+        <div class=" w-full border-r border-black border-solid">
+            <img class="h-full" src="../assets/img/for_about/4.jpg" alt="" data-aos="zoom-in">
+        </div>
+        <div class="flex flex-col p-2 lg:px-20 lg:pt-20 w-full">
+            <div class="sticky top-32">
+                <span class="  font-medium text-2xl sm:text-4xl leading-tight pb-4" data-aos="zoom-in">Making Every Day
+                    Special</span>
+                <p class="font-normal text-sm sm:text-base leading-6" data-aos="zoom-in">
+                    Our mission is simple: to make every day special and memorable for our customers.
+                    We are dedicated to providing the highest quality flowers,
+                    exceptional customer service, and a seamless online experience that will make you feel confident and
+                    satisfied with your purchase.
+                    Thank you for choosing Kyiv LuxeBouquets.
+                    We look forward to bringing joy and happiness to your life with our beautiful bouquets and gifts.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--* sixth section -->
+    <div
+        class="flex flex-col sm:flex-row justify-center items-center w-full border-x border-b border-black border-solid">
+        <div class="flex flex-col justify-center items-center w-full p-3 sm:p-20 text-center">
+            <span class="text-2xl sm:text-4xl font-semibold leading-tight pb-6" data-aos="zoom-in">Discover Our
+                Beautiful
+                Bouquets</span>
+            <span class="  font-medium text-sm sm:text-lg leading-6 pb-14 text-center" data-aos="zoom-in">
+                Explore our collection of exquisite bouquets and surprise your loved ones with the perfect gift.
+                Click the button below to start shopping </span>
+            <a href="./category.html" data-aos="zoom-in">
+                <button
+                    class="border border-black border-solid bg-black text-white h-14 w-72 hover:bg-white hover:text-black hover:border-2 transition-all">SHOP
+                    NOW
+                </button>
+            </a>
+        </div>
+    </div>
+
     <!--* Footer -->
     <footer class="flex border-b">
         <!-- first col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
+        <section class="hidden md:flex flex-col p-10 items-start gap-6 border-l border-r flex-1">
             <p class="text-[#121212] leading-6">
                 Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas...
                 Reminds you 7 days before. No spam or sharing your address
@@ -120,7 +192,7 @@
             </span>
         </section>
         <!-- second col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+        <section class="flex flex-col p-2 sm:p-10 items-start gap-6 border-r flex-1">
             <p class="text-[#808080] font-medium text-xl">Contact Us</p>
             <div class="flex flex-col gap-6">
                 <span class="flex flex-col gap-2">
@@ -148,7 +220,7 @@
             </div>
         </section>
         <!-- third col -->
-        <section class="flex flex-col p-10 items-start gap-6 border-r flex-1">
+        <section class="hidden sm:flex flex-col p-10 items-start gap-6 border-r flex-1">
             <span>
                 <p class="text-[#808080] font-medium text-xl mb-6">Shop</p>
                 <ul class="flex flex-col gap-2 text-[#121212] font-medium">
@@ -182,7 +254,20 @@
             </ul>
         </section>
     </footer>
+
     <script src="../scripts/fresh_details.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        // To disable animation in mobile screen
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 800,
+                disable: function () {
+                    return window.innerWidth < 600;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
