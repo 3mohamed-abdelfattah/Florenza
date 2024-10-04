@@ -272,6 +272,14 @@
         </section>
     </footer>
 
+    <!--! Protected Routes -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (!localStorage.getItem('isLoggedIn')) {
+                window.location.href = '../pages/sign.html';
+            }
+        });
+    </script>
     <script src="../scripts/fresh_details.js"></script>
     <script src="../scripts/header.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
