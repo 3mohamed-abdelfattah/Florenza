@@ -12,7 +12,7 @@ fetch('../../data/itemData.json')
             document.getElementById('flower-price').innerText = `$${flower.price}`;
             document.getElementById('flower-description').innerText = flower.description;
             document.getElementById('flower-image').innerHTML = `
-                <img src="../../assets/img/our_items/freshers/${flower.image}" class="w-full h-screen border object-cover" alt="${flower.title}">
+                <img src="../../assets/img/our_items/freshers/${flower.image}" class="sm:w-full sm:h-screen border object-cover" alt="${flower.title}">
             `;
             document.getElementById('one-time-price').innerText = flower.price;
 
