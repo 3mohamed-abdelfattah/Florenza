@@ -97,12 +97,14 @@ fetch('../../data/itemData.json')
                 if (addToBasketBtn && combinationItem) {
                     const title = combinationItem.querySelector('p:nth-of-type(1)').innerText;
                     const price = parseFloat(combinationItem.querySelector('p:nth-of-type(2)').innerText.replace('$', ''));
-                    const image = combinationItem.querySelector('img').getAttribute('src');
+                    const imageFullPath = combinationItem.querySelector('img').getAttribute('src');
+
+                    const image = imageFullPath.split('/assets/img/').pop();
 
                     const combinationData = {
                         title: title,
                         price: price,
-                        image: image,
+                        image: `${image}`,
                         quantity: 1
                     };
 
@@ -126,13 +128,15 @@ fetch('../../data/itemData.json')
             document.getElementById('add-to-basket').addEventListener('click', () => {
                 const title = document.getElementById('flower-title').innerText;
                 const price = parseFloat(document.getElementById('flower-price').innerText.replace('$', ''));
-                const image = document.querySelector('#flower-image img').getAttribute('src');
+                const imageFullPath = document.querySelector('#flower-image img').getAttribute('src');
+
+                const image = imageFullPath.split('/assets/img/').pop();
 
                 // Save in localStorage
                 const flowerData = {
                     title: title,
                     price: price,
-                    image: image,
+                    image: `${image}`,
                     quantity: parseInt(document.getElementById('quantity').innerText)
                 };
 
