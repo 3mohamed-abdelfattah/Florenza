@@ -80,9 +80,13 @@ We utilize a JSON data file to manage our product listings and user information 
 ## 🚀 Getting Started
 
 1. **Sign Up**: Log in to your existing one.
-2. **Explore**: Browse through our beautiful selection of flowers and candles.
-3. **Add to Cart**: Click on products to add them to your shopping cart.
-4. **Checkout**: Review your cart and proceed to checkout.
+   ```pash
+   username: master
+   password: master
+   ```
+3. **Explore**: Browse through our beautiful selection of flowers and candles.
+4. **Add to Cart**: Click on products to add them to your shopping cart.
+5. **Checkout**: Review your cart and proceed to checkout.
 
 
 ## File Structure
