@@ -3,7 +3,6 @@
 * {
     transition: all 0.2s ease-out;
     border-color: black !important;
-    /* outline: 1px solid rgba(255, 0, 0, 0.527); */
 }
 
 body {
@@ -40,6 +39,34 @@ header>span>ul {
 
 header>span>ul>li {
     border-right: 1px solid #121212;
+}
+
+header a {
+    position: relative;
+    text-decoration: none;
+    color: #121212;
+    padding-bottom: 5px;
+    transition: color 0.5s ease;
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: goldenrod;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+header a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+header a:hover {
+    color: goldenrod;
 }
 
 footer>section>span>ul>li:hover {
