@@ -37,7 +37,7 @@ fetch('../../data/itemData.json')
                 const div = document.createElement('div');
                 div.classList.add('flex', 'flex-col', 'items-center', 'combination-item');
                 div.innerHTML = `
-                    <img src="../../assets/img/combination/${item.image}" class="object-cover" alt="${item.title}">
+                    <img src="./../assets/img/combination/${item.image}" class="object-cover" alt="${item.title}">
                     <p class="font-light">${item.title}</p>
                     <p class="text-gray-500 font-light">$${item.price}</p>
                     <div class="overlay">
