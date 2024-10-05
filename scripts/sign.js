@@ -5,6 +5,7 @@ var username = document.forms[0][0]
 var password = document.forms[0][1]
 var invalidUser = document.getElementById("labuser")
 var invalidPass = document.getElementById("labpass")
+
 document.getElementById("btn").addEventListener('click', function (e) {
     if (!userCheck.test(username.value) && !passCheck.test(password.value)) {
         e.preventDefault()

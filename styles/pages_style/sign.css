@@ -57,6 +57,12 @@ input {
     line-height: 19, 2px;
 }
 
+#btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    outline: 2px solid #000000;
+}
+
 #forgetPass {
     font-weight: 500;
     size: 16px;

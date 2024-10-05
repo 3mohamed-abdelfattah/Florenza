@@ -14,7 +14,41 @@
 </head>
 
 <body>
-    <div class="main-div w-11/12 sm:w-3/4 xl:w-5/12 drop-shadow- rounded-2xl">
+
+    <!--* Header -->
+    <header class="fixed top-0 w-full z-50 bg-white hidden sm:block">
+        <span class="flex justify-between items-center leading-5 text-[#121212] text-center">
+            <ul class="flex border-l-0">
+                <li class="px-6 py-8 w-[180px] border-l-0"><a href="../index.html">Home</a></li>
+                <li class="px-6 py-8 w-[180px]"><a href="./about.html">About us</a></li>
+            </ul>
+            <img class="block xl:hidden w-10" src="../assets/img/icon.png" alt="logo">
+            <ul class="flex">
+                <li class="px-6 py-8 w-[179px]"><a href="./subscription.html">Subscriptions</a></li>
+                <li class="px-6 py-8 w-[180px] border-r-0">
+                    <a href="./checkout.html" class="relative">Cart <span id="cart-count"></span></a>
+                </li>
+            </ul>
+        </span>
+    </header>
+
+    <!-- Header For Mobile -->
+    <header class="fixed top-0 w-full z-50 bg-white sm:hidden">
+        <div class="flex justify-between items-center px-4 py-3">
+            <img class="w-8" src="../assets/img/icon.png" alt="logo">
+            <button id="burger-btn" class="text-3xl focus:outline-none">
+                &#9776;
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden flex flex-col items-center bg-white text-[#121212]">
+            <a href="../index.html" class="py-2 border-b w-full text-center">Home</a>
+            <a href="./about.html" class="py-2 border-b w-full text-center">About us</a>
+            <a href="./subscription.html" class="py-2 border-b w-full text-center">Subscriptions</a>
+            <a href="./checkout.html" class="py-2 w-full text-center">Cart <span id="cart-count"></span></a>
+        </nav>
+    </header>
+
+    <section class="main-div w-11/12 sm:w-3/4 xl:w-5/12 drop-shadow- rounded-2xl mt-14 sm:mt-[85px]">
         <div class="sign-in">
             <div class="container_text header">
                 <p class="text">Sign in</p>
@@ -52,8 +86,11 @@
                 Terms and Conditions
             </a>
         </footer>
-    </div>
+    </section>
+
     <script src="../scripts/sign.js"></script>
+    <script src="../scripts/header.js"></script>
+
 </body>
 
 </html>

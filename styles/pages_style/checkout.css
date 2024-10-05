@@ -1,28 +1,20 @@
 .left-div {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     padding: 40px;
     border-right: 1px solid black;
 }
 
 .right-div {
-    width: 50%;
+    width: 100%;
     background-color: #F5F5F7;
-    padding: 40px 40px 0px 40px;
     text-align: left;
     position: sticky;
 }
 
 .clr-div {
     clear: both;
-}
-
-.main-div {
-    margin-top: 85px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }
 
 footer {
@@ -177,19 +169,10 @@ h3 {
     line-height: 22.4px;
 }
 
-.foot-left {
-    text-align: center;
-    font-weight: 400;
-    size: 14px;
-    line-height: 16.8px;
-    position: absolute;
-    bottom: 40px;
-    left: 43%;
-}
-
 .hr_line {
     border-bottom: 1px solid lightgray !important;
 }
-.border-red{
+
+.border-red {
     border: 1px solid red !important;
 }
