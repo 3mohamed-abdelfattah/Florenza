@@ -2,7 +2,10 @@
 
 Welcome to **Florenza**, the ultimate destination for all types of flowers and scented candles! We provide a delightful online shopping experience for those looking to send gifts that bloom with love.
 
+<div  align="center">
+
 ![Florenza Logo](https://github.com/user-attachments/assets/3551332f-63d4-4b7d-af57-ecd53dc7ea3d)
+</div>
 
 ## 🌟 Features
 
