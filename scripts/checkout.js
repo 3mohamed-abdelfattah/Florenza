@@ -15,11 +15,10 @@ function displayOrderItems() {
 
             const itemTotal = item.price * item.quantity;
             subtotal += itemTotal;
-
             itemDiv.innerHTML = `
             <span class='flex p-2 hr_line'>
-            <button onclick="removeItem(${index})" class="mr-2"><img src='../assets/img/icons/delete-svgrepo-com.svg' class='w-5'></button>
-                <img class='w-20 border' src="${item.image}" alt="${item.title}" class="order-item-image">
+            <button onclick="removeItem(${index})" class="mr-2"><img src='../assets/img/icons/delete.svg' class='w-5'></button>
+                <img class='w-20 border' src="./${item.image}" alt="${item.title}" class="order-item-image">
                 <div class="flex justify-between w-full">
                     <span class='flex flex-col items-left gap-1 p-2'>
                     <span class="text-sm font-semibold">${item.title}</span>
