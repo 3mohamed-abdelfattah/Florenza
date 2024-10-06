@@ -4,7 +4,7 @@ Welcome to **Florenza**, the ultimate destination for all types of flowers and s
 
 <div  align="center">
 
-![Florenza Logo](https://github.com/user-attachments/assets/3551332f-63d4-4b7d-af57-ecd53dc7ea3d)
+![Florenza Logo](https://github.com/user-attachments/assets/aac3cf78-7513-41b4-bac1-7483a0ce0e90)
 </div>
 
 ## 🌟 Features
