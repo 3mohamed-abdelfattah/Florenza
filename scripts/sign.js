@@ -7,28 +7,31 @@ var invalidUser = document.getElementById("labuser")
 var invalidPass = document.getElementById("labpass")
 
 document.getElementById("btn").addEventListener('click', function (e) {
-    if (!userCheck.test(username.value) && !passCheck.test(password.value)) {
-        e.preventDefault()
-        invalidUser.innerHTML = "invalid username"
-        invalidUser.style.color = "red"
-        invalidPass.innerHTML = "invalid password"
-        invalidPass.style.color = "red"
+    const isUsernameValid = userCheck.test(username.value);
+    const isPasswordValid = passCheck.test(password.value);
+
+    // Helper function to set validation messages
+    function setValidationMessage(element, message, color) {
+        element.innerHTML = message;
+        element.style.color = color;
     }
-    else if (!userCheck.test(username.value) && passCheck.test(password.value)) {
-        e.preventDefault()
-        invalidUser.innerHTML = "invalid username"
-        invalidUser.style.color = "red"
-        invalidPass.innerHTML = ""
-        invalidPass.style.color = "white"
+
+    if (!isUsernameValid && !isPasswordValid) {
+        e.preventDefault();
+        setValidationMessage(invalidUser, "invalid username", "red");
+        setValidationMessage(invalidPass, "invalid password", "red");
     }
-    else if (userCheck.test(username.value) && !passCheck.test(password.value)) {
-        e.preventDefault()
-        invalidPass.innerHTML = "invalid password"
-        invalidPass.style.color = "red"
-        invalidUser.innerHTML = ""
-        invalidUser.style.color = "white"
+    else if (!isUsernameValid) {
+        e.preventDefault();
+        setValidationMessage(invalidUser, "invalid username", "red");
+        setValidationMessage(invalidPass, "", "white");
     }
-})
+    else if (!isPasswordValid) {
+        e.preventDefault();
+        setValidationMessage(invalidPass, "invalid password", "red");
+        setValidationMessage(invalidUser, "", "white");
+    }
+});
 
 
 //  User Authentication
@@ -50,7 +53,7 @@ document.getElementById('login-form').addEventListener('submit', function (event
                 // Toastify for Success
                 Toastify({
                     text: "Login successful!",
-                    duration: 3000,
+                    duration: 1000,
                     close: true,
                     gravity: "top",
                     position: "left",
@@ -59,7 +62,7 @@ document.getElementById('login-form').addEventListener('submit', function (event
 
                 setTimeout(() => {
                     window.location.href = '../index.html';
-                }, 2100);
+                }, 1000);
 
             } else {
                 // Toastify for Failure
